@@ -2,78 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f589f2f-5a97-4858-8471-8f8dea1a39f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/creativetype-regular/CreativeType-Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/creativetype-regular/CreativeType-Regular.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/creativetype-regular/creativetype-regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/creativetype-regular/creativetype-regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/creativetype-regular/creativetype-regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/creativetype-regular/creativetype-regular-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/head-portrait/2702b00ec4844f981b3c33a7ac7fa6d5_r.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/head-portrait/6099a6a19aa5c33ba7a32f8527495685_r.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/head-portrait/7646acd250c2118efa410081c3f771f4_b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/head-portrait/7f8cc6cda3be23d0bb6f1577f93187c5_b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/head-portrait/8033b11c712b4aebbf25ecf936a19657_b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/head-portrait/82457ba40559e5f5fc0f2874e451d97f_b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/QQ图片20151123171438.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/QQ图片20151125151459.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-dianzan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-huifu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-xin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/shadow-separator-wide-bottom (1).png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/shadow-separator-wide-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Myservice.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-classification.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-content.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-content.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-insert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-listtest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-submit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-submit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/article-succeed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/article-content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/article-list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/creativetype-regular/creativetype-regular-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-category.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-iconfontquanbu (1).svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-liebiao (2).svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-love.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-tubiao.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/3d-lines-animation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/List.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/canvas-renderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/color.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-2.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/projector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scrollfix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/three.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/processInsertData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/select-list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/insert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testmysql.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/表单.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,15 +97,23 @@
       <option name="number" value="Default" />
       <updated>1449055267528</updated>
     </task>
+    <task id="LOCAL-00001" summary="first comit">
+      <created>1449055662067</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1449055662067</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-318" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -191,6 +132,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first comit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first comit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
