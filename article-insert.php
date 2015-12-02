@@ -1,0 +1,28 @@
+<?php
+$dsn = 'mysql:dbname=myapp';
+$username = 'root';
+$password = '';
+try{
+    $conn = new PDO($dsn,$username,$password);
+    $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+}catch(PDOException $e){
+    echo 'Connection failed:'.$e->getMessage();
+}
+//    $isset = $_POST['submit'] ;
+    $title = $_POST['title'];
+    $classification = $_POST['classification'];
+    $content = $_POST['content'];
+
+    $query = "INSERT INTO articleformal (title,classification,content)
+    VALUES ('{$title}','{$classification}','{$content}')";
+    $conn->query($query);
+    echo 'hello';
+    echo '<script>
+    function pageJump(){
+        window.location.assign("article-succeed.html");
+         }
+    pageJump();
+    </script>';
+
+$conn = null;
+?>
