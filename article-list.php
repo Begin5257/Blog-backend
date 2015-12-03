@@ -81,12 +81,16 @@
                         }catch(PDOException $e){
                             echo 'Query failed:'.$e->getMessage();
                         }
-
+                    echo '</tbody>';
+                    echo '</table>';
+                    echo '</table>';
+                    echo '</div>';
+                    echo '<hr class="hr">';
                     $rows = $conn->query($sql);
                     $row = PDO::FETCH_ASSOC;
                     $total_rows = $var;
                     $total_page = ceil($total_rows/$pagesize);
-
+                    echo '<div id=pageList>';
                     echo '<a href="article-list.php">首页</a>';
                     if($page > 1) {
                         echo '<a href="article-list.php?page=' . ($page - 1) . '">上一页</a>';
@@ -96,21 +100,8 @@
                         echo '<a href="article-list.php?page=' . ($page + 1) . '">下一页</a>';
                     }
                     echo '<a href="article-list.php?page='.$total_page.'">尾页</a>';
+                    echo '</div>';
                     ?>
-            </tbody>
-                </table>
-        </form>
-    </div>
-    <hr class="hr">
-    <div class="next-page">
-        <ul>
-            <li class="first"><a href=""> 1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">...</a></li>
-            <li class="last"><a href="#">下一页</a></li>
-        </ul>
-    </div>
     <hr class="hr">
     <div id="footer">
         <h3>
