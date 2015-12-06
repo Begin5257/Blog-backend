@@ -23,7 +23,7 @@ body {
     margin: 0;
     /*overflow: hidden;*/
 }
-/*ÏÂÃæÕâ»õÊÇSidebar*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sidebar*/
 #sidebar{
     text-align: right;
     display: none;
@@ -276,8 +276,26 @@ body {
 #elapseClock{
     color: #66BAB7;
 }
+#pageList{
+    font-size: 1.1em;
+    height: 70px;
+    text-align: center;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-top: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#pageList a{
+    line-height: 38px;
+    text-decoration: none;
+    margin: 30px;
+}
+#pageList a:hover{
+    color: #66BAB7;
+}
 /************************************************************************************
-smaller than 1400 Á÷¶¯
+smaller than 1400 ï¿½ï¿½ï¿½ï¿½
 *************************************************************************************/
 @media screen and (max-width: 1400px) {
     /*block */
@@ -296,7 +314,7 @@ smaller than 1400 Á÷¶¯
     }
 }
 /************************************************************************************
-smaller than 980 Á÷¶¯
+smaller than 980 ï¿½ï¿½ï¿½ï¿½
 *************************************************************************************/
 @media screen and (max-width: 1000px) {
     /*block */
@@ -321,7 +339,7 @@ smaller than 980 Á÷¶¯
 }
 
 /************************************************************************************
-smaller than 650 É¾µôtools
+smaller than 650 É¾ï¿½ï¿½tools
 *************************************************************************************/
 @media screen and (max-width: 768px) {
     /* sidebar */
