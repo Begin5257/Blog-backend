@@ -296,6 +296,16 @@ body {
 .article-submit:hover{
     border: 1px solid #66BAB7;
 }
+#article_classification{
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #555555;
+    margin-top: 25px;
+    width: 80%;
+    height: auto;
+}
+#article_classification li{
+    text-decoration: none;
+}
 /************************************************************************************
 smaller than 1400 ����
 *************************************************************************************/

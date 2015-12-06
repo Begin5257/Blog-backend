@@ -53,6 +53,26 @@ setInterval(function(){
     memoryTime1(start)
 },500);
 
+function liStatus(){
+    var li = document.getElementsByTagName("li");
+    for (var i =li.length-1; i>0;i--) {
+        li[i].index = i;
+        li[i].mouseover = function () {
+
+            li[this.index].style.color = "#66BAB7";
+            li[this.index].selected = true;
+            var k = this.index;
+
+            for (var j =li.length-1; j>0;j--) {
+                if(j !== k) {
+                    li[j].style.color="#777";
+                    li[j].selected = false;
+                }
+            }
+        }
+    }
+}
+liStatus();
 
 
 
