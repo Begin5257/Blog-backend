@@ -41,7 +41,6 @@
 </div>
 <div id="container">
     <div>
-        <form>
             <ul  id="article_classification">
                 <?php
                 $dsn = 'mysql:dbname=myapp';
@@ -57,14 +56,46 @@
                     $rows = $conn->query($sql);
                     foreach($rows as $row){
                         $var=$row['id'];
-                        echo "<li><a href='article-change.php?id=$var'>".$row['title']."</a> </li>";
+                        echo "<li>".$row['title']." </li>";
                     }
+                    echo "</ul>";
+                    echo '<form method="post" action="deleteArticle.php" id="putIn">';
+                    echo '<button id="btn">点我删除</button>';
+                    echo '</form>';
                 }catch(PDOException $e){
                     echo 'Query failed:'.$e->getMessage();
                 }
                 ?>
-            </ul>
-            <div id="footer">
+                <script>
+                    function liStatus(){
+                        var li = document.getElementsByTagName("li");
+                        for (var i =0;i<li.length; i++) {
+                            li[i].index = i;
+                            li[i].onclick = function () {
+
+                                li[this.index].style.color = "red";
+                                li[this.index].selected = true;
+                                var k = this.index;
+
+                                var newLable = document.createElement("input");
+                                newLable.setAttribute("type","hidden");
+                                newLable.setAttribute("name","showNum");
+                                newLable.setAttribute("value",[this.index]);
+
+                                var element = document.getElementById("putIn");
+                                element.appendChild(newLable);
+                                for (var j=0;j<li.length; j++) {
+                                    if(j !== k) {
+                                        li[j].style.color="#777";
+                                        li[j].selected = false;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    liStatus();
+                </script>
+                <div id="footer">
                 <h3>
                     ©Beginning
                 </h3>
