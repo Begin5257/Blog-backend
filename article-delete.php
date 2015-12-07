@@ -40,40 +40,55 @@
     </div>
 </div>
 <div id="container">
-   <div id="succeed">
-       <p>
-           壮士，是否再来一篇！
-       </p>
-       <a href="index.html">不来了不来了>_<</a>
-       <br>
-       <a href="article-submit.php">好的好的</a>
-   </div>
-    <hr class="hr">
-    <div id="footer">
-        <h3>
-            ©Beginning
-        </h3>
-        <p>love with coffin
+    <div>
+        <form>
+            <ul  id="article_classification">
+                <?php
+                $dsn = 'mysql:dbname=myapp';
+                $username = 'root';
+                $password = '';
+                try{
+                    $conn = new PDO($dsn,$username,$password);
+                    $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+                }catch(PDOException $e){
+                    echo 'Connection failed:'.$e->getMessage();
+                }$sql = "SELECT * FROM `articleformal`";
+                try{
+                    $rows = $conn->query($sql);
+                    foreach($rows as $row){
+                        $var=$row['id'];
+                        echo "<li><a href='article-change.php?id=$var'>".$row['title']."</a> </li>";
+                    }
+                }catch(PDOException $e){
+                    echo 'Query failed:'.$e->getMessage();
+                }
+                ?>
+            </ul>
+            <div id="footer">
+                <h3>
+                    ©Beginning
+                </h3>
+                <p>love with coffin
                  <span id="elapseClock">
                     </span>
                     <span>
                         <img src="icon/iconfont-xin.png" height="16px">
                     </span>
-        </p>
+                </p>
+            </div>
     </div>
-</div>
-<script>
-    function pageJump(){
-        window.location.assign("article-submit.html");
-    }
-</script>
-<script src="js/three.min.js"></script>
-<script src="js/projector.js"></script>
-<script src="js/canvas-renderer.js"></script>
-<script src="js/3d-lines-animation.js"></script>
-<script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
-<script src="js/color.js"></script>
-<script src="js/List.js"></script>
+    <script>
+        function pageJump(){
+            window.location.assign("article-succeed.html");
+        }
+    </script>
+    <script src="js/three.min.js"></script>
+    <script src="js/projector.js"></script>
+    <script src="js/canvas-renderer.js"></script>
+    <script src="js/3d-lines-animation.js"></script>
+    <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+    <script src="js/color.js"></script>
+    <script src="js/List.js"></script>
 </body>
 </html>

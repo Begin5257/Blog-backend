@@ -16,7 +16,7 @@ foreach($rows as $row){
     if($loginPassword==$row['password']){
         echo '<script>
              function pageJump(){
-        window.location.assign("backend.html");
+        window.location.assign("backPage.html");
             }
             pageJump();
             </script>';

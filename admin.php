@@ -65,7 +65,7 @@
 </div>
 <script>
     function pageJump(){
-        window.location.assign("article-submit.php");
+        window.location.assign("backPage.html");
     }
 </script>
 <script src="js/three.min.js"></script>

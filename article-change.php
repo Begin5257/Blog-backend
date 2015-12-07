@@ -22,16 +22,16 @@
             </li>
             <li class="nav-li"><a href="#footer">关于我</a> </li>
             <li class="nav-li"><a href="article-classification.html">分类</a> </li>
-            <li class="nav-li"><a href="article-list.html">文章</a> </li>
-            <li class="nav-li"><a href="index.html">首页</a> </li>
+            <li class="nav-li"><a href="article-list.php">文章</a> </li>
+            <li class="nav-li"><a href="index.php">首页</a> </li>
         </ul>
         <div id="sidebar">
             <img src="icon/iconfont-liebiao%20(2).svg" height="30px">
         </div>
         <div id="sidebar-detail" >
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="article-list.html"> 文章列表</a></li>
+                <li><a href="index.php">首页</a></li>
+                <li><a href="article-list.php"> 文章列表</a></li>
                 <li><a href="article-classification.html"> 文章分类</a></li>
                 <li><a href="#footer">关于我</a></li>
             </ul>
@@ -41,8 +41,7 @@
 </div>
 <div id="container">
     <div id="article-title">
-        <label for="title">标题:</label>
-    <?php
+        <?php
     $dsn = 'mysql:dbname=myapp';
     $username = 'root';
     $password = '';
@@ -52,27 +51,31 @@
     }catch(PDOException $e){
         echo 'Connection failed:'.$e->getMessage();
     }
+    echo '<form method="post" action="insertChange.php">';
+    echo '<label for="title">标题:</label>';
     //$sql = "SELECT * FROM  'users'";
-    $sql = "SELECT * FROM `articleformal`where id='{$_GET['id']}'";
+    $sql = "SELECT * FROM `articleformal`WHERE id='{$_GET['id']}'";
     echo '<a href="#"></a>';
     $rows = $conn->query($sql);
     foreach($rows as $row) {
         $title = $row['title'];
         $classification = $row['classification'];
         $content = $row['content'];
-        echo '<input type="text" class="title-submit"  name="title" id="title">';
+        echo "<input type='text' class='title-submit'  name='title' id='title' value='{$title}''>";
         echo '<br>';
+        echo "<input type='hidden' name='id' value='{$_GET['id']}'";
         echo '<label for="classfication">分类:</label>';
-        echo '<input type="text" class="title-submit" value=$classification name="classification" id="classification">';
+        echo "<input type='text' class='title-submit'  name='classification' id='classification' value='{$classification}''>";
         echo '</div>';
         echo '<div id="article-content">';
         echo '<label for="article">正文：</label>';
-        echo '<input type="text" class="article-submit" value=$content name="content" id="content">';
+        echo "<input type='text' class='article-submit'  name='content' id='content' value='{$content}''>";
         echo '</div>';
+        echo '<button id="btn">提交</button>';
+        echo '  </form>';
     }
     $conn = null;
     ?>
-    <button id="btn">提交</button>
     <hr class="hr">
     <div id="footer">
         <h3>
