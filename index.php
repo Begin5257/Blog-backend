@@ -116,8 +116,10 @@
             <p></p>
         </div>
         <div id="article_inquire">
-            <input type="text">
-            <a href="#"> <img src="icon/iconfont-tubiao.svg" height="25px"></a>
+            <form action="index-inquire.php" method="get">
+                <input type="text" name="content">
+                <button><img src="icon/iconfont-tubiao.svg" height="25px"></button>
+            </form>
         </div>
         <div id="article_list">
             <form>

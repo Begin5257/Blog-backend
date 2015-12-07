@@ -66,9 +66,6 @@
             </ul>
             <button id="btn">删掉他！</button>
             <button id="btn">就想改改~</button>
-        </form>
-    </div>
-    <hr class="hr">
     <div id="footer">
         <h3>
             ©Beginning

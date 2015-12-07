@@ -298,13 +298,19 @@ body {
 }
 #article_classification{
     font-family: "Microsoft YaHei", sans-serif;
+    font-size: 1.1em;
     color: #555555;
-    margin-top: 25px;
     width: 80%;
     height: auto;
+    text-align: center;
+    margin-left: 30px;
 }
 #article_classification li{
-    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+#article_classification a:hover{
+    color: #66BAB7;
 }
 /************************************************************************************
 smaller than 1400 ����
