@@ -22,6 +22,12 @@ foreach($rows as $row){
             </script>';
     }else{
         echo '<script>alert("登录失败，请检查用户名和密码");</script>';
+        echo '<script>
+    function pageJump(){
+        window.location.assign("admin.php");
+         }
+    pageJump();
+    </script>';
     }
 }
 $conn = null;

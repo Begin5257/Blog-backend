@@ -41,6 +41,7 @@
 </div>
 <div id="container">
     <div>
+        <div>
             <ul  id="article_classification">
                 <?php
                 $dsn = 'mysql:dbname=myapp';
@@ -56,12 +57,13 @@
                     $rows = $conn->query($sql);
                     foreach($rows as $row){
                         $var=$row['id'];
-                        echo "<li>".$row['title']." </li>";
+                        echo "<li>".$row['title']."<span style='display:none' class='getNum'>".$row['id']."</span> </li>";
                     }
                     echo "</ul>";
                     echo '<form method="post" action="deleteArticle.php" id="putIn">';
                     echo '<button id="btn">点我删除</button>';
                     echo '</form>';
+                    echo '</div>';
                 }catch(PDOException $e){
                     echo 'Query failed:'.$e->getMessage();
                 }
@@ -76,11 +78,14 @@
                                 li[this.index].style.color = "red";
                                 li[this.index].selected = true;
                                 var k = this.index;
+                                //传递到下一级时居然可以这么玩
+                                var num = this.getElementsByTagName("span")[0].innerHTML;
+                                console.log(num);
 
                                 var newLable = document.createElement("input");
                                 newLable.setAttribute("type","hidden");
                                 newLable.setAttribute("name","showNum");
-                                newLable.setAttribute("value",[this.index]);
+                                newLable.setAttribute("value",num);
 
                                 var element = document.getElementById("putIn");
                                 element.appendChild(newLable);
@@ -96,6 +101,7 @@
                     liStatus();
                 </script>
                 <div id="footer">
+                <a href="index.php">回到后台</a>
                 <h3>
                     ©Beginning
                 </h3>

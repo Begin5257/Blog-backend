@@ -233,13 +233,14 @@ body {
 .login-text:hover{
     border: 1px solid #66BAB7;
 }
+#putIn{
+    text-align: center;
+}
 #btn{
-    margin-left: 5%;
     background-color: white;
     width: 100px;
     height: 38px;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin: 25px auto;
     font-family: "Microsoft YaHei", sans-serif;
     font-size: 16px;
     border: 1px solid #999999;
@@ -303,7 +304,7 @@ body {
     width: 80%;
     height: auto;
     text-align: center;
-    margin-left: 30px;
+    margin: 30px auto;
 }
 #article_classification li{
     list-style-type: none;
