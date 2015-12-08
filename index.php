@@ -165,7 +165,7 @@
                         $rows = $conn->query($sql);
                         foreach($rows as $row){
                             $var=$row['id'];
-                            echo "<li><a href='#'>".$row['title']."</a> </li>";
+                            echo "<li><a href='article-classification.php?id=$var'>".$row['title']."</a> </li>";
                         }
                     }catch(PDOException $e){
                         echo 'Query failed:'.$e->getMessage();

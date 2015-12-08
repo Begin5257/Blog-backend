@@ -8,19 +8,6 @@
     <!--[if IE]>
     <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
-    <style>
-        #content{
-            text-align: center;
-            font-family: "Microsoft YaHei", sans-serif;
-            color: #777777;
-        }
-        #content h3 {
-            margin: 30px;
-        }
-        #content a:hover{
-            color: #66BAB7;
-        }
-    </style>
 </head>
 <body>
 <div id="nav-background">
@@ -36,16 +23,16 @@
             <li class="nav-li"><a href="#footer">关于我</a> </li>
             <li class="nav-li"><a href="article-classification.html">分类</a> </li>
             <li class="nav-li"><a href="article-list.php">文章</a> </li>
-            <li class="nav-li"><a href="index.php">首页</a> </li>
+            <li class="nav-li"><a href="test/index.php">首页</a> </li>
         </ul>
         <div id="sidebar">
             <img src="icon/iconfont-liebiao%20(2).svg" height="30px">
         </div>
         <div id="sidebar-detail" >
             <ul>
-                <li><a href="index.php">首页</a></li>
+                <li><a href="test/index.php">首页</a></li>
                 <li><a href="article-list.php"> 文章列表</a></li>
-                <li><a href="article-classification.php"> 文章分类</a></li>
+                <li><a href="article-classification.html"> 文章分类</a></li>
                 <li><a href="#footer">关于我</a></li>
             </ul>
         </div>
@@ -53,13 +40,26 @@
     </div>
 </div>
 <div id="container">
-    <div id="content">
-        <h2>想干啥~</h2>
-        <h3><a href="article-submit.php">我要写文章!</a></h3>
-        <h3><a href="article-modify.php">我要改文章!</a></h3>
-        <h3><a href="article-delete.php">我要删文章!</a></h3>
-        <h3><a href="Category.php">我要管理分类!</a></h3>
-        <h3><a href="Eggs.html">我要拯救世界!</a></h3>
+    <div id="list">
+        <?php
+        $dsn = 'mysql:dbname=myapp';
+        $username = 'root';
+        $password = '';
+        try{
+            $conn = new PDO($dsn,$username,$password);
+            $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+        }catch(PDOException $e){
+            echo 'Connection failed:'.$e->getMessage();
+        }
+
+        $sql = "SELECT * FROM `articlecontent`where classification='{$_GET['id']}'";
+        $rows = $conn->query($sql);
+        foreach($rows as $row) {
+            $var=$row['id'];
+            echo "<li><a href='article-content.php?id=$var'>".$row['tile']."</a> </li>";
+        }
+        $conn = null;
+        ?>
     </div>
     <hr class="hr">
     <div id="footer">
@@ -75,11 +75,6 @@
         </p>
     </div>
 </div>
-<script>
-    function pageJump(){
-        window.location.assign("article-succeed.html");
-    }
-</script>
 <script src="js/three.min.js"></script>
 <script src="js/projector.js"></script>
 <script src="js/canvas-renderer.js"></script>

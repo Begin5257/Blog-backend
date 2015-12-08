@@ -46,7 +46,7 @@
             <input type="text" class="title-submit" placeholder=" 这里是标题" name="title" id="title">
             <br>
             <label for="classfication">分类:</label>
-                <select class="title-submit" id="classfication" name="classification">
+                <select class="title-submit" id="classification" name="classification">
                     <?php
                     $dsn = 'mysql:dbname=myapp';
                     $username = 'root';
@@ -61,17 +61,26 @@
                         $rows = $conn->query($sql);
                         foreach($rows as $row){
                             $var=$row['id'];
-                            echo "<option>".$row['title']."</option>";
+                            echo "<option value='$var'>".$row['title']."</option>";
                         }
-                        echo '</ul>';
-                        echo '<form method="post" action="deleteCategory.php" id="putIn">';
-                        echo '<button id="btn">点我删除</button>';
-                        echo '</form>';
                     }catch(PDOException $e){
                         echo 'Query failed:'.$e->getMessage();
                     }
                     ?>
                 </select>
+        <script>
+            function liStatus(){
+                var val= document.getElementById("classification").value;
+                            var newLable = document.createElement("input");
+                            newLable.setAttribute("type","hidden");
+                            newLable.setAttribute("name","classification");
+                            newLable.setAttribute("value",val);
+
+                            var element = document.getElementById("article-title");
+                            element.appendChild(newLable);
+            }
+            liStatus();
+        </script>
     </div>
     <div id="article-content">
             <label for="article">正文：</label>

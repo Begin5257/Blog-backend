@@ -14,15 +14,14 @@ try{
     $classification = $_POST['classification'];
     echo $classification;
     $query = "INSERT INTO articlecontent (tile,content,classification) VALUES ('{$title}','{$content}','{$classification}')";
-
+echo $query;
     $conn->query($query);
-    echo 'hello';
-//    echo '<script>
-//    function pageJump(){
-//        window.location.assign("article-succeed.html");
-//         }
-//    pageJump();
-//    </script>';
+    echo '<script>
+    function pageJump(){
+        window.location.assign("article-succeed.html");
+         }
+    pageJump();
+    </script>';
 
 $conn = null;
 ?>
