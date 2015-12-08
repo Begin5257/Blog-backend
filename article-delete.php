@@ -52,12 +52,12 @@
                     $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 }catch(PDOException $e){
                     echo 'Connection failed:'.$e->getMessage();
-                }$sql = "SELECT * FROM `articleformal`";
+                }$sql = "SELECT * FROM `articlecontent`";
                 try{
                     $rows = $conn->query($sql);
                     foreach($rows as $row){
                         $var=$row['id'];
-                        echo "<li>".$row['title']."<span style='display:none' class='getNum'>".$row['id']."</span> </li>";
+                        echo "<li>".$row['tile']."<span style='display:none' class='getNum'>".$row['id']."</span> </li>";
                     }
                     echo "</ul>";
                     echo '<form method="post" action="deleteArticle.php" id="putIn">';

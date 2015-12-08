@@ -16,7 +16,7 @@
     <div class="nav fix">
         <ul class="nav-ul">
             <li class="nav-left">
-                <a href="#">
+                <a href="admin.php">
                     <img src="icon/QQ图片20151123171438.jpg">
                 </a>
             </li>
@@ -40,9 +40,9 @@
     </div>
 </div>
 <div id="container">
-    <div>
-        <form>
-            <ul  id="article_classification">
+    <div id="category">
+        <div id="existing">
+            <ul class="classification">
                 <?php
                 $dsn = 'mysql:dbname=myapp';
                 $username = 'root';
@@ -52,18 +52,62 @@
                     $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 }catch(PDOException $e){
                     echo 'Connection failed:'.$e->getMessage();
-                }$sql = "SELECT * FROM `articlecontent`";
+                }$sql = "SELECT * FROM  `categorytest`";
                 try{
                     $rows = $conn->query($sql);
                     foreach($rows as $row){
                         $var=$row['id'];
-                        echo "<li><a href='article-change.php?id=$var'>".$row['tile']."</a> </li>";
+                        echo "<li>".$row['title']."<span style='display:none' class='getNum'>".$row['id']."</span> </li>";
                     }
+                    echo '</ul>';
+                    echo '<form method="post" action="deleteCategory.php" id="putIn">';
+                    echo '<button id="btn">点我删除</button>';
+                    echo '</form>';
                 }catch(PDOException $e){
                     echo 'Query failed:'.$e->getMessage();
                 }
                 ?>
-            </ul>
+        </div>
+        <div id="new">
+            <form method="post" action="newCategory.php">
+                <input type="text" name="newCategory">
+                <button id="btn">提交</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function liStatus(){
+            var li = document.getElementsByTagName("li");
+            for (var i =0;i<li.length; i++) {
+                li[i].index = i;
+                li[i].onclick = function () {
+
+                    li[this.index].style.color = "red";
+                    li[this.index].selected = true;
+                    var k = this.index;
+                    //传递到下一级时居然可以这么玩
+                    var num = this.getElementsByTagName("span")[0].innerHTML;
+                    console.log(num);
+
+                    var newLable = document.createElement("input");
+                    newLable.setAttribute("type","hidden");
+                    newLable.setAttribute("name","showNum");
+                    newLable.setAttribute("value",num);
+
+                    var element = document.getElementById("putIn");
+                    element.appendChild(newLable);
+                    for (var j=0;j<li.length; j++) {
+                        if(j !== k) {
+                            li[j].style.color="#777";
+                            li[j].selected = false;
+                        }
+                    }
+                }
+            }
+        }
+        liStatus();
+    </script>
+    <hr class="hr">
     <div id="footer">
         <h3>
             ©Beginning
@@ -79,7 +123,7 @@
 </div>
 <script>
     function pageJump(){
-        window.location.assign("article-succeed.html");
+        window.location.assign("article-submit.html");
     }
 </script>
 <script src="js/three.min.js"></script>

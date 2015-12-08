@@ -48,11 +48,11 @@
             echo 'Connection failed:'.$e->getMessage();
         }
         //$sql = "SELECT * FROM  'users'";
-        $sql = "SELECT * FROM `articleformal`where id='{$_GET['id']}'";
+        $sql = "SELECT * FROM `articlecontent`where id='{$_GET['id']}'";
         echo '<a href="#"></a>';
         $rows = $conn->query($sql);
         foreach($rows as $row) {
-            echo "<h2>".$row["title"]."</h2>";
+            echo "<h2>".$row["tile"]."</h2>";
             echo "<p>".$row["content"]."</p>";
         }
         $conn = null;

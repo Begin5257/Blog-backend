@@ -12,7 +12,8 @@ try{
 $title = $_POST['title'];
 $classification = $_POST['classification'];
 $content = $_POST['content'];
-$sql = "UPDATE `articleformal` SET title ='{$title}', classification = '{$classification}'
+echo $classification;
+$sql = "UPDATE `articlecontent` SET tile ='{$title}'
  ,content = '{$content}'WHERE  id='{$_POST['id']}'";
 $conn->query($sql);
 echo '<script>

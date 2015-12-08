@@ -54,18 +54,16 @@
     echo '<form method="post" action="insertChange.php">';
     echo '<label for="title">标题:</label>';
     //$sql = "SELECT * FROM  'users'";
-    $sql = "SELECT * FROM `articleformal`WHERE id='{$_GET['id']}'";
+    $sql = "SELECT * FROM `articlecontent`  WHERE id='{$_GET['id']}'";
     echo '<a href="#"></a>';
     $rows = $conn->query($sql);
-    foreach($rows as $row) {
-        $title = $row['title'];
+    foreach($rows as $index => $row) {
+        $title = $row['tile'];
         $classification = $row['classification'];
         $content = $row['content'];
         echo "<input type='text' class='title-submit'  name='title' id='title' value='{$title}''>";
         echo '<br>';
         echo "<input type='hidden' name='id' value='{$_GET['id']}'";
-        echo '<label for="classfication">分类:</label>';
-        echo "<input type='text' class='title-submit'  name='classification' id='classification' value='{$classification}''>";
         echo '</div>';
         echo '<div id="article-content">';
         echo '<label for="article">正文：</label>';

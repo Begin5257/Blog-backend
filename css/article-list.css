@@ -305,6 +305,7 @@ body {
     height: auto;
     text-align: center;
     margin: 30px auto;
+    list-style-type: none;
 }
 #article_classification li{
     list-style-type: none;

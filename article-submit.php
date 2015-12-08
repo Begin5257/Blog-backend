@@ -46,7 +46,32 @@
             <input type="text" class="title-submit" placeholder=" 这里是标题" name="title" id="title">
             <br>
             <label for="classfication">分类:</label>
-            <input type="text" class="title-submit" placeholder=" 这里是分类" name="classification" id="classification">
+                <select class="title-submit" id="classfication" name="classification">
+                    <?php
+                    $dsn = 'mysql:dbname=myapp';
+                    $username = 'root';
+                    $password = '';
+                    try{
+                        $conn = new PDO($dsn,$username,$password);
+                        $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+                    }catch(PDOException $e){
+                        echo 'Connection failed:'.$e->getMessage();
+                    }$sql = "SELECT * FROM  `categorytest`";
+                    try{
+                        $rows = $conn->query($sql);
+                        foreach($rows as $row){
+                            $var=$row['id'];
+                            echo "<option>".$row['title']."</option>";
+                        }
+                        echo '</ul>';
+                        echo '<form method="post" action="deleteCategory.php" id="putIn">';
+                        echo '<button id="btn">点我删除</button>';
+                        echo '</form>';
+                    }catch(PDOException $e){
+                        echo 'Query failed:'.$e->getMessage();
+                    }
+                    ?>
+                </select>
     </div>
     <div id="article-content">
             <label for="article">正文：</label>

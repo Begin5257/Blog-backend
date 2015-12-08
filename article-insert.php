@@ -8,21 +8,21 @@ try{
 }catch(PDOException $e){
     echo 'Connection failed:'.$e->getMessage();
 }
-//    $isset = $_POST['submit'] ;
-    $title = $_POST['title'];
-    $classification = $_POST['classification'];
-    $content = $_POST['content'];
 
-    $query = "INSERT INTO articleformal (title,classification,content)
-    VALUES ('{$title}','{$classification}','{$content}')";
+    $title = $_POST['title'];
+    $content = $_POST['content'];
+    $classification = $_POST['classification'];
+    echo $classification;
+    $query = "INSERT INTO articlecontent (tile,content,classification) VALUES ('{$title}','{$content}','{$classification}')";
+
     $conn->query($query);
     echo 'hello';
-    echo '<script>
-    function pageJump(){
-        window.location.assign("article-succeed.html");
-         }
-    pageJump();
-    </script>';
+//    echo '<script>
+//    function pageJump(){
+//        window.location.assign("article-succeed.html");
+//         }
+//    pageJump();
+//    </script>';
 
 $conn = null;
 ?>

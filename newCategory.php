@@ -8,12 +8,14 @@ try{
 }catch(PDOException $e){
     echo 'Connection failed:'.$e->getMessage();
 }
+$title = $_POST['newCategory'];
 
-$sql = "DELETE FROM `articlecontent` WHERE  id='{$_POST['showNum']}' ";
-$conn->query($sql);
+$query = "INSERT INTO `categorytest` (title)VALUES ('{$title}')";
+
+$conn->query($query);
 echo '<script>
     function pageJump(){
-        window.location.assign("article-delete.php");
+        window.location.assign("Category.php");
          }
     pageJump();
     </script>';

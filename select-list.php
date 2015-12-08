@@ -18,12 +18,12 @@ echo "<table>
         </tr>
         </thead>
         <tbody>";
-$sql = "SELECT * FROM  `articleformal`";
+$sql = "SELECT * FROM  `articlecontent`";
 try{
     $rows = $conn->query($sql);
     foreach($rows as $row){
         echo "<tr>";
-        echo "<td>".$row['title']."</td>";
+        echo "<td>".$row['tile']."</td>";
         echo "<td>".$row['classification']."</td>";
         echo "<td>".$row['DataType']."</td>";
         echo "</tr>";

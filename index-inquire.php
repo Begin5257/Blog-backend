@@ -51,12 +51,12 @@
             }catch(PDOException $e){
                 echo 'Connection failed:'.$e->getMessage();
             }
-            $sql = "SELECT * FROM `articleformal`WHERE  `content` LIKE '%{$_GET['content']}%'";
+            $sql = "SELECT * FROM `articlecontent`WHERE  `content` LIKE '%{$_GET['content']}%'";
             try{
                 $rows = $conn->query($sql);
                 foreach($rows as $row){
                     $var=$row['id'];
-                    echo "<li><a href='article-content.php?id=$var'>".$row['title']."</a> </li>";
+                    echo "<li><a href='article-content.php?id=$var'>".$row['tile']."</a> </li>";
                 }
             }catch(PDOException $e){
                 echo 'Query failed:'.$e->getMessage();

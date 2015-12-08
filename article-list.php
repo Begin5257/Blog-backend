@@ -67,13 +67,13 @@
                     }
                     $start =  ($page-1)*$pagesize;
                     $end = $page*$pagesize;
-                    $sql = "SELECT * FROM  `articleformal` LIMIT $start,$end";
+                    $sql = "SELECT * FROM  `articlecontent` LIMIT $start,$end";
                         try{
                             $rows = $conn->query($sql);
                             foreach($rows as $row){
                                 $var=$row['id'];
                                 echo "<tr>";
-                                echo "<td><a href='article-content.php?id=$var'>".$row['title']."</a> </td>";
+                                echo "<td><a href='article-content.php?id=$var'>".$row['tile']."</a> </td>";
                                 echo "<td><a href='#'>".$row['classification']."</a> </td>";
                                 echo "<td><a href='#'> ".$row['DataType']."</a></td>";
                                 echo "</tr>";

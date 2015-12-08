@@ -63,14 +63,14 @@
         }
         $start =  ($page-1)*$pagesize;
         $end = $page*$pagesize;
-        $sql = "SELECT * FROM  `articleformal` LIMIT $start,$end";
+        $sql = "SELECT * FROM  `articlecontent` LIMIT $start,$end";
         try{
             $rows = $conn->query($sql);
             foreach($rows as $row){
                 echo '<div class="article">';
                 echo '<div id="article-h2" >';
                 $var=$row['id'];
-                echo "<a href='article-content.php?id=$var'><h2>".$row['title']."</h2></a>";
+                echo "<a href='article-content.php?id=$var'><h2>".$row['tile']."</h2></a>";
                 echo "</div>";
                 echo '<p class="article_comment">发表于'.$row["DataType"].'|<span><a href="#">暂无评论</a> </span></p>';
                 echo '<p class="article_body">'.$row['content']."</p>";
@@ -133,12 +133,12 @@
                     $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 }catch(PDOException $e){
                     echo 'Connection failed:'.$e->getMessage();
-                }$sql = "SELECT * FROM  `articleformal` LIMIT 0,6";
+                }$sql = "SELECT * FROM  `articlecontent` LIMIT 0,6";
                 try{
                     $rows = $conn->query($sql);
                     foreach($rows as $row){
                         $var=$row['id'];
-                        echo "<li><a href='article-content.php?id=$var'>".$row['title']."</a> </li>";
+                        echo "<li><a href='article-content.php?id=$var'>".$row['tile']."</a> </li>";
                     }
                 }catch(PDOException $e){
                     echo 'Query failed:'.$e->getMessage();
@@ -160,12 +160,12 @@
                         $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     }catch(PDOException $e){
                         echo 'Connection failed:'.$e->getMessage();
-                    }$sql = "SELECT * FROM  `articleformal` LIMIT 0,6";
+                    }$sql = "SELECT * FROM  `categorytest` LIMIT 0,6";
                     try{
                         $rows = $conn->query($sql);
                         foreach($rows as $row){
                             $var=$row['id'];
-                            echo "<li><a href='#'>".$row['classification']."</a> </li>";
+                            echo "<li><a href='#'>".$row['title']."</a> </li>";
                         }
                     }catch(PDOException $e){
                         echo 'Query failed:'.$e->getMessage();

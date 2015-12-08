@@ -9,11 +9,11 @@ try{
     echo 'Connection failed:'.$e->getMessage();
 }
 
-$sql = "DELETE FROM `articlecontent` WHERE  id='{$_POST['showNum']}' ";
+$sql = "DELETE FROM `categorytest` WHERE  id='{$_POST['showNum']}' ";
 $conn->query($sql);
 echo '<script>
     function pageJump(){
-        window.location.assign("article-delete.php");
+        window.location.assign("Category.php");
          }
     pageJump();
     </script>';
