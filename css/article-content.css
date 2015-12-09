@@ -7,7 +7,7 @@ body {
     margin: 0;
     /*overflow: hidden;*/
 }
-/*ÏÂÃæÕâ»õÊÇSidebar*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sidebar*/
 #sidebar{
     text-align: right;
     display: none;
@@ -245,6 +245,16 @@ a:hover{
     font-family: "Microsoft YaHei", sans-serif;
     font-size: 1em;
 }
+#inquireSearch{
+    float: right;
+    margin-right: 10%;
+    background-color: transparent;
+    border: none;
+    z-index: 2000;
+}
+#inquireSearch:hover{
+    cursor: pointer;
+}
 /*.table-detail{*/
     /*width: 100%;*/
     /*max-width: 100%;*/
@@ -338,7 +348,7 @@ a:hover{
     margin-bottom: 15px;
 }
 /************************************************************************************
-smaller than 1400 Á÷¶¯
+smaller than 1400 ï¿½ï¿½ï¿½ï¿½
 *************************************************************************************/
 @media screen and (max-width: 1400px) {
     /*block */
@@ -361,7 +371,7 @@ smaller than 1400 Á÷¶¯
         margin-left: 0;
     }
 /************************************************************************************
-smaller than 980 Á÷¶¯
+smaller than 980 ï¿½ï¿½ï¿½ï¿½
 *************************************************************************************/
 @media screen and (max-width: 1000px) {
     /*block */
@@ -390,7 +400,7 @@ smaller than 980 Á÷¶¯
 }
 
 /************************************************************************************
-smaller than 650 É¾µôtools
+smaller than 650 É¾ï¿½ï¿½tools
 *************************************************************************************/
 @media screen and (max-width: 768px) {
     /* sidebar */

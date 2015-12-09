@@ -18,7 +18,7 @@
             </a>
         </li>
         <li class="nav-li"><a href="#footer">关于我</a> </li>
-        <li class="nav-li"><a href="article-classification.php">分类</a> </li>
+        <li class="nav-li"><a href="article-category.php">分类</a> </li>
         <li class="nav-li"><a href="article-list.php">文章</a> </li>
         <li class="nav-li"><a href="index.php">首页</a> </li>
     </ul>
@@ -29,7 +29,7 @@
         <ul>
             <li><a href="index.php">首页</a></li>
             <li><a href="article-list.php"> 文章列表</a></li>
-            <li><a href="article-classification.php"> 文章分类</a></li>
+            <li><a href="article-category.php"> 文章分类</a></li>
             <li><a href="#footer">关于我</a></li>
         </ul>
     </div>
@@ -196,32 +196,61 @@
             <p></p>
         </div>
         <div id="article_inquire">
-            <input type="text">
-            <a href="#"> <img src="icon/iconfont-tubiao.svg" height="25px"></a>
+            <form action="index-inquire.php" method="get">
+                <input type="text" name="content" class="wenben">
+                <button id="inquireSearch"><img src="icon/iconfont-tubiao.svg" height="25px"></button>
+            </form>
         </div>
         <div id="article_list">
             <form>
                 <ul class="classification">
-                    <li><a href="#">浅谈前端入门</a></li>
-                    <li><a href="#">浅谈前端入门</a></li>
-                    <li><a href="#">浅谈前端入门</a></li>
-                    <li><a href="#">浅谈前端入门</a></li>
-                    <li><a href="#">浅谈前端入门</a></li>
-                    <li><a href="#">浅谈前端入门</a></li>
-                    <li><a href="#">浅谈前端入门</a></li>
+                    <?php
+                    $dsn = 'mysql:dbname=myapp';
+                    $username = 'root';
+                    $password = '';
+                    try{
+                        $conn = new PDO($dsn,$username,$password);
+                        $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+                    }catch(PDOException $e){
+                        echo 'Connection failed:'.$e->getMessage();
+                    }$sql = "SELECT * FROM  `articlecontent` LIMIT 0,6";
+                    try{
+                        $rows = $conn->query($sql);
+                        foreach($rows as $row){
+                            $var=$row['id'];
+                            echo "<li><a href='article-content.php?id=$var'>".$row['tile']."</a> </li>";
+                        }
+                    }catch(PDOException $e){
+                        echo 'Query failed:'.$e->getMessage();
+                    }
+                    ?>
+                    <li class="special"><a href="article-list.php">更多>></a></li>
                 </ul>
             </form>
         </div>
         <div id="article_classification">
             <form>
                 <ul class="classification">
-                    <li><a href="#">html5</a></li>
-                    <li><a href="#">css3</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">jQuery</a></li>
-                    <li><a href="#">Ajax</a></li>
-                    <li><a href="#">杂</a></li>
-                    <li><a href="#">...</a></li>
+                    <?php
+                    $dsn = 'mysql:dbname=myapp';
+                    $username = 'root';
+                    $password = '';
+                    try{
+                        $conn = new PDO($dsn,$username,$password);
+                        $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+                    }catch(PDOException $e){
+                        echo 'Connection failed:'.$e->getMessage();
+                    }$sql = "SELECT * FROM  `categorytest` LIMIT 0,6";
+                    try{
+                        $rows = $conn->query($sql);
+                        foreach($rows as $row){
+                            $var=$row['id'];
+                            echo "<li><a href='article-classification.php?id=$var'>".$row['title']."</a> </li>";
+                        }
+                    }catch(PDOException $e){
+                        echo 'Query failed:'.$e->getMessage();
+                    }
+                    ?>
                 </ul>
             </form>
         </div>

@@ -16,14 +16,14 @@
     <div class="nav fix">
         <ul class="nav-ul">
             <li class="nav-left">
-                <a href="#">
+                <a href="admin.php">
                     <img src="icon/QQ图片20151123171438.jpg">
                 </a>
             </li>
             <li class="nav-li"><a href="#footer">关于我</a> </li>
             <li class="nav-li"><a href="article-category.php">分类</a> </li>
             <li class="nav-li"><a href="article-list.php">文章</a> </li>
-            <li class="nav-li"><a href="index.php">首页</a> </li>
+            <li class="nav-li"><a href="test/index.php">首页</a> </li>
         </ul>
         <div id="sidebar">
             <img src="icon/iconfont-liebiao%20(2).svg" height="30px">
@@ -40,15 +40,32 @@
     </div>
 </div>
 <div id="container">
-    <div id="login">
-        <form action="login.php" method="post">
-            用户名：<input type="text"  class="login-text" placeholder="请输入用户名" id="id" name="id">
-            <br>
-            密码：<input type="password" class="login-text1" placeholder="请输入密码" id="password" name="password">
-            <br>
-            <input  type="submit" id="btn" value="登录">
-        </form>
-    </div>
+   <div id="list">
+       <form>
+           <ul class="classification">
+               <?php
+               $dsn = 'mysql:dbname=myapp';
+               $username = 'root';
+               $password = '';
+               try{
+                   $conn = new PDO($dsn,$username,$password);
+                   $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+               }catch(PDOException $e){
+                   echo 'Connection failed:'.$e->getMessage();
+               }$sql = "SELECT * FROM  `categorytest` LIMIT 0,6";
+               try{
+                   $rows = $conn->query($sql);
+                   foreach($rows as $row){
+                       $var=$row['id'];
+                       echo "<li><a href='article-classification.php?id=$var'>".$row['title']."</a> </li>";
+                   }
+               }catch(PDOException $e){
+                   echo 'Query failed:'.$e->getMessage();
+               }
+               ?>
+           </ul>
+       </form>
+   </div>
     <hr class="hr">
     <div id="footer">
         <h3>
@@ -63,11 +80,6 @@
         </p>
     </div>
 </div>
-<script>
-    function pageJump(){
-        window.location.assign("backPage.html");
-    }
-</script>
 <script src="js/three.min.js"></script>
 <script src="js/projector.js"></script>
 <script src="js/canvas-renderer.js"></script>

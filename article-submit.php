@@ -6,7 +6,8 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/article-list.css" media="screen"/>
     <!--[if IE]>
-    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <!--<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>-->
+    <script src="http://cdn.ckeditor.com/4.5.5/full/ckeditor.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -16,12 +17,12 @@
     <div class="nav fix">
         <ul class="nav-ul">
             <li class="nav-left">
-                <a href="#">
+                <a href="admin.php">
                     <img src="icon/QQ图片20151123171438.jpg">
                 </a>
             </li>
             <li class="nav-li"><a href="#footer">关于我</a> </li>
-            <li class="nav-li"><a href="article-classification.html">分类</a> </li>
+            <li class="nav-li"><a href="article-category.php">分类</a> </li>
             <li class="nav-li"><a href="article-list.php">文章</a> </li>
             <li class="nav-li"><a href="index.php">首页</a> </li>
         </ul>
@@ -32,7 +33,7 @@
             <ul>
                 <li><a href="index.php">首页</a></li>
                 <li><a href="article-list.php"> 文章列表</a></li>
-                <li><a href="article-classification.html"> 文章分类</a></li>
+                <li><a href="article-category.php"> 文章分类</a></li>
                 <li><a href="#footer">关于我</a></li>
             </ul>
         </div>
@@ -82,8 +83,11 @@
         </script>
     </div>
     <div id="article-content">
-            <label for="article">正文：</label>
-            <input type="text" class="article-submit" placeholder=" 这里是正文啦" name="content" id="content">
+        <label for="article">正文：</label>
+        <textarea rows="50" cols="40" name="content" id="content" class="article-submit"></textarea>
+        <script type="text/javascript">
+            CKEDITOR.replace('content');
+        </script>
     </div>
         <button id="btn">提交</button>
     </form>

@@ -195,6 +195,16 @@ body {
     float: right;
     right: 22%;
 }
+#inquireSearch{
+    float: right;
+    margin-right: 10%;
+    background-color: transparent;
+    border: none;
+    z-index: 2000;
+}
+#inquireSearch:hover{
+    cursor: pointer;
+}
 #article_list,#article_classification{
     font-family: "Microsoft YaHei", sans-serif;
     color: #555555;

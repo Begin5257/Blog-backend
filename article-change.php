@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/article-list.css" media="screen"/>
-    <!--[if IE]>
-    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
-    <![endif]-->
+    <script src="http://cdn.ckeditor.com/4.5.5/full/ckeditor.js"></script>
 </head>
 <body>
 <div id="nav-background">
@@ -21,7 +19,7 @@
                 </a>
             </li>
             <li class="nav-li"><a href="#footer">关于我</a> </li>
-            <li class="nav-li"><a href="article-classification.html">分类</a> </li>
+            <li class="nav-li"><a href="article-category.php">分类</a> </li>
             <li class="nav-li"><a href="article-list.php">文章</a> </li>
             <li class="nav-li"><a href="index.php">首页</a> </li>
         </ul>
@@ -32,7 +30,7 @@
             <ul>
                 <li><a href="index.php">首页</a></li>
                 <li><a href="article-list.php"> 文章列表</a></li>
-                <li><a href="article-classification.html"> 文章分类</a></li>
+                <li><a href="article-category.php"> 文章分类</a></li>
                 <li><a href="#footer">关于我</a></li>
             </ul>
         </div>
@@ -67,7 +65,10 @@
         echo '</div>';
         echo '<div id="article-content">';
         echo '<label for="article">正文：</label>';
-        echo "<input type='text' class='article-submit'  name='content' id='content' value='{$content}''>";
+        echo "<textarea rows='50' cols='40' name='content' id='content' class='article-submit'>"."$content"."</textarea>";
+        echo '<script type="text/javascript">';
+        echo 'CKEDITOR.replace("content");';
+        echo '</script>';
         echo '</div>';
         echo '<button id="btn">提交</button>';
         echo '  </form>';

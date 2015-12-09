@@ -11,6 +11,7 @@ try{
 
     $title = $_POST['title'];
     $content = $_POST['content'];
+    echo $content;
     $classification = $_POST['classification'];
     $query = "INSERT INTO articlecontent (tile,content,classification) VALUES ('{$title}','{$content}','{$classification}')";
     $conn->query($query);

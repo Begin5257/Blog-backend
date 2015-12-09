@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li class="nav-li"><a href="#footer">关于我</a> </li>
-            <li class="nav-li"><a href="article-classification.html">分类</a> </li>
+            <li class="nav-li"><a href="article-category.php">分类</a> </li>
             <li class="nav-li"><a href="article-list.php">文章</a> </li>
             <li class="nav-li"><a href="index.php">首页</a> </li>
         </ul>
@@ -33,7 +33,7 @@
             <ul>
                 <li><a href="index.php">首页</a></li>
                 <li><a href="article-list.php"> 文章列表</a></li>
-                <li><a href="article-classification.html"> 文章分类</a></li>
+                <li><a href="article-category.php"> 文章分类</a></li>
                 <li><a href="#footer">关于我</a></li>
             </ul>
         </div>
