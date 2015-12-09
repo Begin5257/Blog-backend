@@ -12,9 +12,7 @@ try{
     $title = $_POST['title'];
     $content = $_POST['content'];
     $classification = $_POST['classification'];
-    echo $classification;
     $query = "INSERT INTO articlecontent (tile,content,classification) VALUES ('{$title}','{$content}','{$classification}')";
-echo $query;
     $conn->query($query);
     echo '<script>
     function pageJump(){

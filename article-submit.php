@@ -69,7 +69,7 @@
                     ?>
                 </select>
         <script>
-            document.getElementById("title").onchange=function(){
+            document.getElementById("classification").onchange=function(){
                 var val= document.getElementById("classification").value;
                             var newLable = document.createElement("input");
                             newLable.setAttribute("type","hidden");
