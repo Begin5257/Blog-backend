@@ -69,7 +69,7 @@
                     ?>
                 </select>
         <script>
-            function liStatus(){
+            document.getElementById("title").onchange=function(){
                 var val= document.getElementById("classification").value;
                             var newLable = document.createElement("input");
                             newLable.setAttribute("type","hidden");
@@ -78,8 +78,7 @@
 
                             var element = document.getElementById("article-title");
                             element.appendChild(newLable);
-            }
-            liStatus();
+            };
         </script>
     </div>
     <div id="article-content">
