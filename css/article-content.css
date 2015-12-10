@@ -98,7 +98,6 @@ body {
 #manage{
     float: left;
     width: 30%;
-    background-color: #777777;
 }
 #manage li{
     text-decoration: none;
@@ -110,7 +109,6 @@ body {
 #content{
     float: right;
     width: 70%;
-    background-color: #66afe9;
     height: 500px;
 }
 .article{

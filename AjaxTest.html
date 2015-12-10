@@ -37,11 +37,9 @@
 </div>
 <div id="container">
     <div id="manage">
-        <ul>
-            <li id="add">文章添加</li>
-            <li id="delete">文章删除</li>
-            <li id="category">分类管理</li>
-        </ul>
+            <div id="add">文章添加</div>
+            <div id="delete">文章删除</div>
+            <div id="category">分类管理</div>
     </div>
     <div id="content">
 
@@ -69,7 +67,7 @@
     }
     var add=document.getElementById("add");
     add.onclick=function(){
-            createXML();
+        createXML();
     };
     var category = document.getElementById("category");
     category.onclick = function () {
@@ -88,10 +86,11 @@
                 document.getElementById("content").innerHTML=xmlhttp.responseText;
             }
         };
-        xmlhttp.open("GET","http://localhost:63343/blog/category.php",true);
+        xmlhttp.open("GET","http://localhost:63343/blog/CategoryTest.php",true);
         xmlhttp.send();
     }
 </script>
+<script src="js/liStatus.js"></script>
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/three.min.js"></script>
 <script src="js/projector.js"></script>
