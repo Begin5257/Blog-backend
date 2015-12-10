@@ -122,10 +122,21 @@ body {
     height: auto;
 }
 #list{
-    margin-left: 25%;
     font-family: "Microsoft YaHei", sans-serif;
     font-size: 17px;
     color: #666666;
+   margin: 20px auto;
+}
+#list ul{
+    text-align: center;
+}
+#list li{
+    margin: 20px auto;
+    list-style-type: none;
+}
+#list table{
+    text-align: center;
+    margin: 0 auto;
 }
 #left{
     width: 50%!important;
@@ -238,9 +249,10 @@ body {
 }
 #btn{
     background-color: white;
-    width: 100px;
+    display: block;
+    width:  20%;
     height: 38px;
-    margin: 25px auto;
+    margin: 35px auto;
     font-family: "Microsoft YaHei", sans-serif;
     font-size: 16px;
     border: 1px solid #999999;
@@ -268,12 +280,11 @@ body {
     color: #66BAB7;
 }
 .title-submit{
-     margin-left: 5%;
      background-color: white;
      width: 80%;
+     margin: 0 auto;
+    display:block;
      height: 38px;
-     margin-top: 25px;
-     margin-bottom: 20px;
      font-family: "Microsoft YaHei", sans-serif;
      font-size: 16px;
      border: 1px solid #999999;
@@ -282,13 +293,12 @@ body {
 .title-submit:hover{
     border: 1px solid #66BAB7;
 }
+#article-title{
+    margin: 20px auto;
+}
 .article-submit{
-    margin-left: 5%;
     background-color: white;
     width: 80%;
-    height: 500px;
-    margin-top: 25px;
-    margin-bottom: 20px;
     font-family: "Microsoft YaHei", sans-serif;
     font-size: 16px;
     border: 1px solid #999999;
@@ -313,6 +323,10 @@ body {
 }
 #article_classification a:hover{
     color: #66BAB7;
+}
+#cke_content{
+    width: 80%;
+    margin: 20px auto;
 }
 /************************************************************************************
 smaller than 1400 ����

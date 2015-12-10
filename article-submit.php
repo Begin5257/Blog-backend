@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/article-list.css" media="screen"/>
     <!--[if IE]>
     <!--<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>-->
-    <script src="http://cdn.ckeditor.com/4.5.5/full/ckeditor.js"></script>
+    <script src="http://cdn.ckeditor.com/4.5.5/standard/ckeditor.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -47,7 +47,7 @@
             <input type="text" class="title-submit" placeholder=" 这里是标题" name="title" id="title">
             <br>
             <label for="classfication">分类:</label>
-                <select class="title-submit" id="classification" name="classification">
+                <select class="title-submit" id="classification" name="category">
                     <?php
                     $dsn = 'mysql:dbname=myapp';
                     $username = 'root';
@@ -62,7 +62,7 @@
                         $rows = $conn->query($sql);
                         foreach($rows as $row){
                             $var=$row['id'];
-                            echo "<option value='$var'>".$row['title']."</option>";
+                            echo "<option value='$var' class='category'>".$row['title']."</option>";
                         }
                     }catch(PDOException $e){
                         echo 'Query failed:'.$e->getMessage();
@@ -84,7 +84,7 @@
     </div>
     <div id="article-content">
         <label for="article">正文：</label>
-        <textarea rows="50" cols="40" name="content" id="content" class="article-submit"></textarea>
+        <textarea name="content" id="content" class="article-submit"></textarea>
         <script type="text/javascript">
             CKEDITOR.replace('content');
         </script>

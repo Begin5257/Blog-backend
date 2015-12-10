@@ -67,14 +67,17 @@
                     }
                     $start =  ($page-1)*$pagesize;
                     $end = $page*$pagesize;
-                    $sql = "SELECT * FROM  `articlecontent` LIMIT $start,$end";
+                    //多表查询~
+                    $sql = "SELECT articlecontent.id, articlecontent.tile, DataType, content, categorytest.title
+                    as categorytitle, categorytest.id as categoryid FROM categorytest, articlecontent where
+                    categorytest.id = articlecontent.classification LIMIT $start,$end";
                         try{
                             $rows = $conn->query($sql);
                             foreach($rows as $row){
                                 $var=$row['id'];
                                 echo "<tr>";
                                 echo "<td><a href='article-content.php?id=$var'>".$row['tile']."</a> </td>";
-                                echo "<td><a href='#'>".$row['classification']."</a> </td>";
+                                echo "<td><a href='#'>".$row['categorytitle']."</a> </td>";
                                 echo "<td><a href='#'> ".$row['DataType']."</a></td>";
                                 echo "</tr>";
                             }
