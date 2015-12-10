@@ -95,11 +95,29 @@ body {
     margin: 0 auto;
     height: auto;
 }
+#manage{
+    float: left;
+    width: 30%;
+    background-color: #777777;
+}
+#manage li{
+    text-decoration: none;
+    cursor: pointer;
+}
+#manage li:hover{
+    color: #66BAB7;
+}
+#content{
+    float: right;
+    width: 70%;
+    background-color: #66afe9;
+    height: 500px;
+}
 .article{
-    width: 75%;
+    width: 70%;
     height: inherit;
-    margin:  0 auto;
-    padding-top: 80px;
+    margin-left: 5%;
+    padding-top: 30px;
     float: left;
     font-family: "Microsoft YaHei", sans-serif;
 }
@@ -112,6 +130,9 @@ body {
 }
 .article  a:hover{
     color: #2f3238;
+}
+.article p{
+    display: block;
 }
 .article comment a:hover{
     color: lightskyblue;

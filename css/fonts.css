@@ -157,9 +157,15 @@ body {
     color: #999999;
 }
 .article_body{
-    width: 80%;
+     width: 80%;
+     text-align: center;
+     margin: 0 auto;
+     font-size: 16px;
+     line-height: 1.8;
+     color: #555;
+ }
+.article p{
     margin: 0 auto;
-    padding-bottom: 40px;
     font-size: 16px;
     line-height: 1.8;
     color: #555;
