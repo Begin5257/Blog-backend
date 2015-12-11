@@ -112,8 +112,29 @@
         </div>
     </div>
     <div id="tools">
-        <div id="date">
-            <p></p>
+        <div class="day">
+            <div class="DaySelect">
+                <i class="lr" onclick="Month('l')"></i>
+                <div class="select">
+                    <div class="stop" id="cy">2015</div>
+                    <div class="sbox">
+                        <ul id="YearAll">
+                            <li>2013</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="select" id="sm">
+                    <div class="stop" id="cm">12</div>
+                    <div class="sbox" id="mm">
+                        <ul id="DateAll">
+                            <li>01</li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="lr" onclick="Month('r')"></i>
+                <i onclick="now()"></i>
+            </div>
+            <div id="DayAll"></div>
         </div>
         <div id="article_inquire">
             <form action="index-inquire.php" method="get">
@@ -176,6 +197,7 @@
         </div>
     </div>
 </div>
+<script src="js/calender.js"></script>
 <script src="js/three.min.js"></script>
 <script src="js/projector.js"></script>
 <script src="js/canvas-renderer.js"></script>
