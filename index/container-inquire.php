@@ -11,7 +11,6 @@ try{
 }catch(PDOException $e){
     echo 'Connection failed:'.$e->getMessage();
 }
-echo '<div id="block">';
 $start =  ($page-1)*$pagesize;
 $end = $page*$pagesize;
 $sql = "SELECT * FROM  `articlecontent` LIMIT $start,$end";
@@ -36,7 +35,7 @@ $rows = $conn->query($sql);
 $row = PDO::FETCH_ASSOC;
 $total_rows = $var;
 $total_page = ceil($total_rows/$pagesize);
-echo '<div id=pageList>';
+echo '<div id= pageList>';
 echo '<a href="index.php">首页</a>';
 if($page > 1) {
     echo '<a href="index.php?page='. ($page - 1) . '">上一页</a>';
@@ -45,5 +44,4 @@ if($page < $total_page) {
     echo '<a href="index.php?page=' . ($page + 1) . '">下一页</a>';
 }
 echo '<a href="index.php?page='.$total_page.'">尾页</a>';
-echo '</div>';
 ?>

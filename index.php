@@ -48,54 +48,7 @@
 </div>
 <div id="container">
     <div id="block">
-        <?php
-        $pagesize = 10;
-        $page = isset($_GET['page'])?$_GET['page']:1;
-
-        $dsn = 'mysql:dbname=app_begin5257';
-        $username = 'SAE_MYSQL_USER';
-        $password = 'SAE_MYSQL_PASS';
-        try{
-            $conn = new PDO($dsn,$username,$password);
-            $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-        }catch(PDOException $e){
-            echo 'Connection failed:'.$e->getMessage();
-        }
-        $start =  ($page-1)*$pagesize;
-        $end = $page*$pagesize;
-        $sql = "SELECT * FROM  `articlecontent` LIMIT $start,$end";
-        try{
-            $rows = $conn->query($sql);
-            foreach($rows as $row){
-                echo '<div class="article">';
-                echo '<div id="article-h2" >';
-                $var=$row['id'];
-                echo "<a href='article-content.php?id=$var'><h2>".$row['tile']."</h2></a>";
-                echo "</div>";
-                echo '<p class="article_comment">发表于'.$row["DataType"].'|<span><a href="#">暂无评论</a> </span></p>';
-                echo '<p class="article_body">'.$row['content']."</p>";
-                echo '<hr class="hr">';
-                echo '</div>';
-            }
-        }catch(PDOException $e){
-            echo 'Query failed:'.$e->getMessage();
-        }
-
-        $rows = $conn->query($sql);
-        $row = PDO::FETCH_ASSOC;
-        $total_rows = $var;
-        $total_page = ceil($total_rows/$pagesize);
-        echo '<div id=pageList>';
-        echo '<a href="index.php">首页</a>';
-        if($page > 1) {
-            echo '<a href="index.php?page='. ($page - 1) . '">上一页</a>';
-        }
-        if($page < $total_page) {
-            echo '<a href="index.php?page=' . ($page + 1) . '">下一页</a>';
-        }
-        echo '<a href="index.php?page='.$total_page.'">尾页</a>';
-        echo '</div>';
-        ?>
+       <?php include'index/container-inquire.php'?>
         <hr class="hr">
         <div id="footer">
             <h3>
@@ -109,6 +62,7 @@
                         <img src="icon/iconfont-xin.png" height="16px">
                     </span>
             </p>
+        </div>
         </div>
     </div>
     <div id="tools">
@@ -137,7 +91,7 @@
             <div id="DayAll"></div>
         </div>
         <div id="article_inquire">
-            <form action="index-inquire.php" method="get">
+            <form action="index/index-inquire.php" method="get">
                 <input type="text" name="content" class="wenben">
                 <button id="inquireSearch"><img src="icon/iconfont-tubiao.svg" height="25px"></button>
             </form>
@@ -145,26 +99,7 @@
         <div id="article_list">
             <form>
                 <ul class="classification">
-                    <?php
-                    $dsn = 'mysql:dbname=myapp';
-                    $username = 'root';
-                    $password = '';
-                    try{
-                        $conn = new PDO($dsn,$username,$password);
-                        $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                    }catch(PDOException $e){
-                        echo 'Connection failed:'.$e->getMessage();
-                    }$sql = "SELECT * FROM  `articlecontent` LIMIT 0,6";
-                    try{
-                        $rows = $conn->query($sql);
-                        foreach($rows as $row){
-                            $var=$row['id'];
-                            echo "<li><a href='article-content.php?id=$var'>".$row['tile']."</a> </li>";
-                        }
-                    }catch(PDOException $e){
-                        echo 'Query failed:'.$e->getMessage();
-                    }
-                    ?>
+                  <?php include'index/list-inquire.php';?>
                     <li class="special"><a href="article-list.php">更多>></a></li>
                 </ul>
             </form>
@@ -172,26 +107,7 @@
         <div id="article_classification">
             <form>
                 <ul class="classification">
-                    <?php
-                    $dsn = 'mysql:dbname=myapp';
-                    $username = 'root';
-                    $password = '';
-                    try{
-                        $conn = new PDO($dsn,$username,$password);
-                        $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                    }catch(PDOException $e){
-                        echo 'Connection failed:'.$e->getMessage();
-                    }$sql = "SELECT * FROM  `categorytest` LIMIT 0,6";
-                    try{
-                        $rows = $conn->query($sql);
-                        foreach($rows as $row){
-                            $var=$row['id'];
-                            echo "<li><a href='article-classification.php?id=$var'>".$row['title']."</a> </li>";
-                        }
-                    }catch(PDOException $e){
-                        echo 'Query failed:'.$e->getMessage();
-                    }
-                    ?>
+                   <?php include'index/classification-inquire.php';?>
                 </ul>
             </form>
         </div>
