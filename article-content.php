@@ -196,7 +196,7 @@
             <p></p>
         </div>
         <div id="article_inquire">
-            <form action="index-inquire.php" method="get">
+            <form action="index/index-inquire.php" method="get">
                 <input type="text" name="content" class="wenben">
                 <button id="inquireSearch"><img src="icon/iconfont-tubiao.svg" height="25px"></button>
             </form>

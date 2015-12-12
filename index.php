@@ -52,9 +52,9 @@
         $pagesize = 10;
         $page = isset($_GET['page'])?$_GET['page']:1;
 
-        $dsn = 'mysql:dbname=myapp';
-        $username = 'root';
-        $password = '';
+        $dsn = 'mysql:dbname=app_begin5257';
+        $username = 'SAE_MYSQL_USER';
+        $password = 'SAE_MYSQL_PASS';
         try{
             $conn = new PDO($dsn,$username,$password);
             $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -145,26 +145,26 @@
         <div id="article_list">
             <form>
                 <ul class="classification">
-                <?php
-                $dsn = 'mysql:dbname=myapp';
-                $username = 'root';
-                $password = '';
-                try{
-                    $conn = new PDO($dsn,$username,$password);
-                    $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                }catch(PDOException $e){
-                    echo 'Connection failed:'.$e->getMessage();
-                }$sql = "SELECT * FROM  `articlecontent` LIMIT 0,6";
-                try{
-                    $rows = $conn->query($sql);
-                    foreach($rows as $row){
-                        $var=$row['id'];
-                        echo "<li><a href='article-content.php?id=$var'>".$row['tile']."</a> </li>";
+                    <?php
+                    $dsn = 'mysql:dbname=myapp';
+                    $username = 'root';
+                    $password = '';
+                    try{
+                        $conn = new PDO($dsn,$username,$password);
+                        $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+                    }catch(PDOException $e){
+                        echo 'Connection failed:'.$e->getMessage();
+                    }$sql = "SELECT * FROM  `articlecontent` LIMIT 0,6";
+                    try{
+                        $rows = $conn->query($sql);
+                        foreach($rows as $row){
+                            $var=$row['id'];
+                            echo "<li><a href='article-content.php?id=$var'>".$row['tile']."</a> </li>";
+                        }
+                    }catch(PDOException $e){
+                        echo 'Query failed:'.$e->getMessage();
                     }
-                }catch(PDOException $e){
-                    echo 'Query failed:'.$e->getMessage();
-                }
-                ?>
+                    ?>
                     <li class="special"><a href="article-list.php">更多>></a></li>
                 </ul>
             </form>
