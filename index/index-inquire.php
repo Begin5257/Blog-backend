@@ -43,12 +43,7 @@
         <ul  id="article_classification">
             <?php
             include 'config.php';
-            try{
-                $conn = new PDO($dsn,$username,$password);
-                $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-            }catch(PDOException $e){
-                echo 'Connection failed:'.$e->getMessage();
-            }
+
             $sql = "SELECT * FROM `articlecontent`WHERE  `content` LIKE '%{$_GET['content']}%'";
             try{
                 $rows = $conn->query($sql);

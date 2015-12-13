@@ -1,11 +1,5 @@
 <?php
 include 'config.php';
-try{
-    $conn = new PDO($dsn,$username,$password);
-    $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-}catch(PDOException $e){
-    echo 'Connection failed:'.$e->getMessage();
-}
 echo '<form method="post" action="insertChange.php">';
 echo '<label for="title">标题:</label>';
 //$sql = "SELECT * FROM  'users'";

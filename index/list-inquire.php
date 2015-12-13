@@ -1,11 +1,7 @@
 <?php
 include 'config.php';
-try{
-    $conn = new PDO($dsn,$username,$password);
-    $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-}catch(PDOException $e){
-    echo 'Connection failed:'.$e->getMessage();
-}echo '<ul class="frontend">';
+
+echo '<ul class="frontend">';
 $sql = "SELECT * FROM  `articlecontent` LIMIT 0,6";
 try{
     $rows = $conn->query($sql);

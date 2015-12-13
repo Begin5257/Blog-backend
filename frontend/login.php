@@ -2,12 +2,7 @@
 include 'config.php';
 $loginID = $_POST['id'];
 $loginPassword = $_POST['password'];
-try{
-    $conn = new PDO($dsn,$username,$password);
-    $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-}catch(PDOException $e){
-    echo 'Connection failed:'.$e->getMessage();
-}
+
 $sql = "SELECT * FROM  `users`WHERE  id='Beginning'";
 $rows = $conn->query($sql);
 foreach($rows as $row){
