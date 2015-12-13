@@ -14,7 +14,7 @@ ul,li{margin:0;padding:0;}
 li{list-style:none;}
 
 .day{width:320px;}
-.day table{width:100%;text-align:center;border-collapse:collapse;border-spacing:0;line-height:45px;background-image: url("08.png");background-size:320px 300px;
+.day table{width:100%;text-align:center;border-collapse:collapse;border-spacing:0;line-height:40px;background-image: url("08.png");background-size:100% 300px;
     background-repeat:no-repeat;margin-bottom: 30px;}
 .day table th{background:#F5F5F5;font-weight:normal;line-height:45px;font-size:14px;}
 .day table td,.day th{border:1px solid #EEE;}
@@ -361,6 +361,9 @@ smaller than 1400 ����
     }
     .first{
         margin-left: 28%;
+    }
+    .day{
+        width: 82%;
     }
 }
 /************************************************************************************
