@@ -1,7 +1,5 @@
 <?php
-$dsn = 'mysql:dbname=myapp';
-$username = 'root';
-$password = '';
+include 'config.php';
 try{
     $conn = new PDO($dsn,$username,$password);
     $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -16,7 +14,7 @@ try{
     $conn->query($query);
     echo '<script>
     function pageJump(){
-        window.location.assign("article-succeed.html");
+        window.location.assign("../article-succeed.html");
          }
     pageJump();
     </script>';

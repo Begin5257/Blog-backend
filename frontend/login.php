@@ -1,7 +1,5 @@
 <?php
-$dsn = 'mysql:dbname=myapp';
-$username = 'root';
-$password = '';
+include 'config.php';
 $loginID = $_POST['id'];
 $loginPassword = $_POST['password'];
 try{

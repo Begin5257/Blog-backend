@@ -2,9 +2,7 @@
 $pagesize = 2;
 $page = isset($_GET['page'])?$_GET['page']:1;
 
-$dsn = 'mysql:dbname=myapp';
-$username = 'root';
-$password = '';
+include 'config.php';
 try{
     $conn = new PDO($dsn,$username,$password);
     $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);

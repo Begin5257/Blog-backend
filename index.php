@@ -56,7 +56,6 @@
             </h3>
             <p>love with coffin
                     <span id="elapseClock">
-
                     </span>
                     <span>
                         <img src="icon/iconfont-xin.png" height="16px">

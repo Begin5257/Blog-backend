@@ -41,7 +41,7 @@
     </div>
 </div>
 <div id="container">
-    <form method="post" action="article-insert.php">
+    <form method="post" action="backend/article-insert.php">
     <div id="article-title">
             <label for="title">标题:</label>
             <input type="text" class="title-submit" placeholder=" 这里是标题" name="title" id="title">
