@@ -5,6 +5,7 @@ $page = isset($_GET['page'])?$_GET['page']:1;
 include 'config.php';
 try{
     $conn = new PDO($dsn,$username,$password);
+    $conn->query('set names utf8;');
     $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 }catch(PDOException $e){
     echo 'Connection failed:'.$e->getMessage();
