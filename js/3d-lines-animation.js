@@ -82,9 +82,9 @@ var mouseX = 0, mouseY = 0,
                 var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: color, opacity: 0.2 } ) );
                 scene.add( line );
 
-                document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-                document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-                document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+                canvas.addEventListener( 'mousemove', onDocumentMouseMove, false );
+                canvas.addEventListener( 'touchstart', onDocumentTouchStart, false );
+                canvas.addEventListener( 'touchmove', onDocumentTouchMove, false );
 
                 //
 
