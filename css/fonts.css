@@ -398,7 +398,8 @@ smaller than 650 ɾ��tools
     /* sidebar */
     #block {
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
+        word-break: break-word;
     }
     #article {
         width:100%;
@@ -414,5 +415,8 @@ smaller than 650 ɾ��tools
     }
     .first{
         margin-left: 8%;
+    }
+    #pageList a{
+        margin: 20px;
     }
 }
