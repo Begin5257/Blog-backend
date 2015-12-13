@@ -1,8 +1,10 @@
 <?php
-$dsn = 'mysql:host='.SAE_MYSQL_HOST_M.';dbname=app_begin5257';
+$dsn = 'mysql:host='.SAE_MYSQL_HOST_M.';port='.SAE_MYSQL_PORT.';dbname=app_begin5257';
 $username = SAE_MYSQL_USER;
 $password = SAE_MYSQL_PASS;
 echo $dsn;
+echo $username;
+echo $password;
 //$dsn ='SAE_MYSQL_HOST_M:SAE_MYSQL_PORT';
 //$dbname = SAE_MYSQL_DB;
 //$dsn = 'mysql:dbname = SAE_MYSQL_HOST_M';
