@@ -1,10 +1,10 @@
 <?php
-include 'config.php';
+include '../config.php';
 
     $title = $_POST['title'];
     $content = $_POST['content'];
-    $classification = $_POST['frontend'];
-    $query = "INSERT INTO articlecontent (tile,content,frontend) VALUES ('{$title}','{$content}','{$classification}')";
+    $classification = $_POST['category'];
+    $query = "INSERT INTO articlecontent (tile,content,classification) VALUES ('{$title}','{$content}','{$classification}')";
     $conn->query($query);
     echo '<script>
     function pageJump(){

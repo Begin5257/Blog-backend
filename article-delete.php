@@ -43,7 +43,7 @@
     <div>
         <div>
             <ul  id="article_classification">
-                <?php include'backend/articleDelete.php';?>
+                <?php include'backend/showDelete.php';?>
                 <script>
                     function liStatus(){
                         var li = document.getElementsByTagName("li");

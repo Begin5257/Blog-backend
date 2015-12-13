@@ -173,8 +173,29 @@
         </div>
     </div>
     <div id="tools">
-        <div id="date">
-            <p></p>
+        <div class="day">
+            <div class="DaySelect">
+                <i class="lr" onclick="Month('l')"></i>
+                <div class="select">
+                    <div class="stop" id="cy">2015</div>
+                    <div class="sbox">
+                        <ul id="YearAll">
+                            <li>2013</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="select" id="sm">
+                    <div class="stop" id="cm">12</div>
+                    <div class="sbox" id="mm">
+                        <ul id="DateAll">
+                            <li>01</li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="lr" onclick="Month('r')"></i>
+                <i onclick="now()"></i>
+            </div>
+            <div id="DayAll"></div>
         </div>
         <div id="article_inquire">
             <form action="index/index-inquire.php" method="get">
@@ -185,26 +206,7 @@
         <div id="article_list">
             <form>
                 <ul class="classification">
-                    <?php
-                    $dsn = 'mysql:dbname=myapp';
-                    $username = 'root';
-                    $password = '';
-                    try{
-                        $conn = new PDO($dsn,$username,$password);
-                        $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                    }catch(PDOException $e){
-                        echo 'Connection failed:'.$e->getMessage();
-                    }$sql = "SELECT * FROM  `articlecontent` LIMIT 0,6";
-                    try{
-                        $rows = $conn->query($sql);
-                        foreach($rows as $row){
-                            $var=$row['id'];
-                            echo "<li><a href='article-content.php?id=$var'>".$row['tile']."</a> </li>";
-                        }
-                    }catch(PDOException $e){
-                        echo 'Query failed:'.$e->getMessage();
-                    }
-                    ?>
+                    <?php include'index/list-inquire.php';?>
                     <li class="special"><a href="article-list.php">更多>></a></li>
                 </ul>
             </form>
@@ -212,31 +214,13 @@
         <div id="article_classification">
             <form>
                 <ul class="classification">
-                    <?php
-                    $dsn = 'mysql:dbname=myapp';
-                    $username = 'root';
-                    $password = '';
-                    try{
-                        $conn = new PDO($dsn,$username,$password);
-                        $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                    }catch(PDOException $e){
-                        echo 'Connection failed:'.$e->getMessage();
-                    }$sql = "SELECT * FROM  `categorytest` LIMIT 0,6";
-                    try{
-                        $rows = $conn->query($sql);
-                        foreach($rows as $row){
-                            $var=$row['id'];
-                            echo "<li><a href='article-frontend.php?id=$var'>".$row['title']."</a> </li>";
-                        }
-                    }catch(PDOException $e){
-                        echo 'Query failed:'.$e->getMessage();
-                    }
-                    ?>
+                    <?php include'index/classification-inquire.php';?>
                 </ul>
             </form>
         </div>
     </div>
 </div>
+<script src="js/calender.js"></script>
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/three.min.js"></script>
 <script src="js/projector.js"></script>

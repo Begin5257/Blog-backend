@@ -39,7 +39,7 @@
 </div>
 <div id="container">
     <div id="article-title">
-        <?php include'backend/articleChange.php';?>
+        <?php include'backend/articleChange.php'?>
     <hr class="hr">
     <div id="footer">
         <h3>

@@ -2,7 +2,7 @@
 $pagesize = 15;
 $page = isset($_GET['page'])?$_GET['page']:1;
 
-include 'config.php';
+include "./config.php";
 
 $start =  ($page-1)*$pagesize;
 $end = $page*$pagesize;

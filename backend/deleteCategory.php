@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../config.php';
 
 $sql = "DELETE FROM `categorytest` WHERE  id='{$_POST['showNum']}' ";
 $conn->query($sql);

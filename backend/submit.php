@@ -1,7 +1,7 @@
 <?php
-include 'config.php';
+include './config.php';
 
-$sql = "SELECT * FROM  `categorytest`";
+$sql = "SELECT * FROM `categorytest`";
 try{
     $rows = $conn->query($sql);
     foreach($rows as $row){

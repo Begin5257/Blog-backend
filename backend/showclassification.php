@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include './config.php';
 
 $sql = "SELECT * FROM  `categorytest`";
 try{
@@ -9,7 +9,7 @@ try{
         echo "<li>".$row['title']."<span style='display:none' class='getNum'>".$row['id']."</span> </li>";
     }
     echo '</ul>';
-    echo '<form method="post" action="deleteCategory.php" id="putIn">';
+    echo '<form method="post" action="backend/deleteCategory.php" id="putIn">';
     echo '<button id="btn">点我删除</button>';
     echo '</form>';
 }catch(PDOException $e){

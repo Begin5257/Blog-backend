@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include "../config.php";
 $title = $_POST['newCategory'];
 
 $query = "INSERT INTO `categorytest` (title)VALUES ('{$title}')";

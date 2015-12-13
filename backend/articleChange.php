@@ -1,6 +1,6 @@
 <?php
-include 'config.php';
-echo '<form method="post" action="insertChange.php">';
+include './config.php';
+echo '<form method="post" action="backend/insertChange.php">';
 echo '<label for="title">标题:</label>';
 //$sql = "SELECT * FROM  'users'";
 $sql = "SELECT * FROM `articlecontent`  WHERE id='{$_GET['id']}'";
@@ -8,7 +8,7 @@ echo '<a href="#"></a>';
 $rows = $conn->query($sql);
 foreach($rows as $index => $row) {
     $title = $row['tile'];
-    $classification = $row['frontend'];
+    $classification = $row['id'];
     $content = $row['content'];
     echo "<input type='text' class='title-submit'  name='title' id='title' value='{$title}''>";
     echo '<br>';

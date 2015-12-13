@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li class="nav-li"><a href="#footer">关于我</a> </li>
-            <li class="nav-li"><a href="article-classification.html">分类</a> </li>
+            <li class="nav-li"><a href="article-classification.php">分类</a> </li>
             <li class="nav-li"><a href="article-list.php">文章</a> </li>
             <li class="nav-li"><a href="index.php">首页</a> </li>
         </ul>
