@@ -153,7 +153,7 @@ body {
     color: #555;
 }
 #tools{
-    width: 25%;
+    width: 20%;
     margin-top: 50px;
     float: right;
 }
@@ -373,7 +373,7 @@ smaller than 1400 ����
 @media screen and (max-width: 1400px) {
     /*block */
     .article {
-        width: 75%;
+        width: 70%;
     }
     .article-body{
         width: 100%;

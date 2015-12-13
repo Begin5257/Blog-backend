@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+
 $loginID = $_POST['id'];
 $loginPassword = $_POST['password'];
 
@@ -9,7 +10,7 @@ foreach($rows as $row){
     if($loginPassword==$row['password']){
         echo '<script>
              function pageJump(){
-        window.location.assign("../backPage.html");
+        window.location.assign("backPage.html");
             }
             pageJump();
             </script>';
@@ -17,7 +18,7 @@ foreach($rows as $row){
         echo '<script>alert("登录失败，请检查用户名和密码");</script>';
         echo '<script>
     function pageJump(){
-        window.location.assign("../admin.php");
+        window.location.assign("admin.php");
          }
     pageJump();
     </script>';
