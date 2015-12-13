@@ -398,7 +398,7 @@ smaller than 650 ɾ��tools
     /* sidebar */
     #block {
         width: 100%;
-        overflow: scroll;
+        overflow: hidden;
     }
     #article {
         width:100%;
