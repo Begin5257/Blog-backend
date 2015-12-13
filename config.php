@@ -9,6 +9,7 @@ try{
 }catch(PDOException $e){
     echo 'Connection failed:'.$e->getMessage();
 }
+
 //$dsn ='SAE_MYSQL_HOST_M:SAE_MYSQL_PORT';
 //$dbname = SAE_MYSQL_DB;
 //$dsn = 'mysql:dbname = SAE_MYSQL_HOST_M';
