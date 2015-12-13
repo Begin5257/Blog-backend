@@ -13,6 +13,8 @@
     height: 1px;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #ffffff;
+    border-left: none;
+    border-right: none;
 }
 a{
     color: #666666;
@@ -23,7 +25,7 @@ body {
     margin: 0;
     /*overflow: hidden;*/
 }
-/*ÏÂÃæÕâ»õÊÇSidebar*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sidebar*/
 #sidebar{
     text-align: right;
     display: none;
@@ -306,7 +308,7 @@ body {
     border: 1px solid #66BAB7;
 }
 /************************************************************************************
-smaller than 1400 Á÷¶¯
+smaller than 1400 ï¿½ï¿½ï¿½ï¿½
 *************************************************************************************/
 @media screen and (max-width: 1400px) {
     /*block */
@@ -321,7 +323,7 @@ smaller than 1400 Á÷¶¯
     }
 }
 /************************************************************************************
-smaller than 980 Á÷¶¯
+smaller than 980 ï¿½ï¿½ï¿½ï¿½
 *************************************************************************************/
 @media screen and (max-width: 1000px) {
     /*block */
@@ -343,7 +345,7 @@ smaller than 980 Á÷¶¯
 }
 
 /************************************************************************************
-smaller than 650 É¾µôtools
+smaller than 650 É¾ï¿½ï¿½tools
 *************************************************************************************/
 @media screen and (max-width: 768px) {
     /* sidebar */

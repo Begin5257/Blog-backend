@@ -44,6 +44,8 @@ li{list-style:none;}
     height: 1px;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #ffffff;
+    border-left: none;
+    border-right: none;
 }
 a{
     color: #000000;
