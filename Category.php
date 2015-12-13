@@ -32,7 +32,7 @@
             <ul>
                 <li><a href="index.php">首页</a></li>
                 <li><a href="article-list.php"> 文章列表</a></li>
-                <li><a href="article-classification.html"> 文章分类</a></li>
+                <li><a href="article-classification.php"> 文章分类</a></li>
                 <li><a href="#footer">关于我</a></li>
             </ul>
         </div>
@@ -43,33 +43,10 @@
     <div id="category">
         <div id="existing">
             <ul class="classification">
-                <?php
-                $dsn = 'mysql:dbname=myapp';
-                $username = 'root';
-                $password = '';
-                try{
-                    $conn = new PDO($dsn,$username,$password);
-                    $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                }catch(PDOException $e){
-                    echo 'Connection failed:'.$e->getMessage();
-                }$sql = "SELECT * FROM  `categorytest`";
-                try{
-                    $rows = $conn->query($sql);
-                    foreach($rows as $row){
-                        $var=$row['id'];
-                        echo "<li>".$row['title']."<span style='display:none' class='getNum'>".$row['id']."</span> </li>";
-                    }
-                    echo '</ul>';
-                    echo '<form method="post" action="deleteCategory.php" id="putIn">';
-                    echo '<button id="btn">点我删除</button>';
-                    echo '</form>';
-                }catch(PDOException $e){
-                    echo 'Query failed:'.$e->getMessage();
-                }
-                ?>
+                <?php include'backend/showclassification.php';?>
         </div>
         <div id="new">
-            <form method="post" action="newCategory.php">
+            <form method="post" action="backend/newCategory.php">
                 <input type="text" name="newCategory">
                 <button id="btn">提交</button>
             </form>

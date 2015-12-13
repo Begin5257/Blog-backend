@@ -112,7 +112,6 @@
             </form>
         </div>
     </div>
-</div>
 <script src="js/calender.js"></script>
 <script src="js/three.min.js"></script>
 <script src="js/projector.js"></script>

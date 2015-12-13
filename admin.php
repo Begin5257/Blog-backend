@@ -41,7 +41,7 @@
 </div>
 <div id="container">
     <div id="login">
-        <form action="login.php" method="post">
+        <form action="frontend/login.php" method="post">
             用户名：<input type="text"  class="login-text" placeholder="请输入用户名" id="id" name="id">
             <br>
             密码：<input type="password" class="login-text1" placeholder="请输入密码" id="password" name="password">

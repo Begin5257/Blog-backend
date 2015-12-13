@@ -24,7 +24,7 @@ try{
     foreach($rows as $row){
         echo "<tr>";
         echo "<td>".$row['tile']."</td>";
-        echo "<td>".$row['classification']."</td>";
+        echo "<td>".$row['frontend']."</td>";
         echo "<td>".$row['DataType']."</td>";
         echo "</tr>";
     }

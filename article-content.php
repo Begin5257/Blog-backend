@@ -37,26 +37,7 @@
 </div>
 <div id="container">
     <div class="article">
-        <?php
-        $dsn = 'mysql:dbname=myapp';
-        $username = 'root';
-        $password = '';
-        try{
-            $conn = new PDO($dsn,$username,$password);
-            $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-        }catch(PDOException $e){
-            echo 'Connection failed:'.$e->getMessage();
-        }
-        //$sql = "SELECT * FROM  'users'";
-        $sql = "SELECT * FROM `articlecontent`where id='{$_GET['id']}'";
-        echo '<a href="#"></a>';
-        $rows = $conn->query($sql);
-        foreach($rows as $row) {
-            echo "<h2>".$row["tile"]."</h2>";
-            echo "<p>".$row["content"]."</p>";
-        }
-        $conn = null;
-        ?>
+        <?php include'frontend/aricleContent.php';?>
         <div id="comment">
             <h3>发表评论</h3>
             <input type="textarea" id="comment-body">
@@ -245,7 +226,7 @@
                         $rows = $conn->query($sql);
                         foreach($rows as $row){
                             $var=$row['id'];
-                            echo "<li><a href='article-classification.php?id=$var'>".$row['title']."</a> </li>";
+                            echo "<li><a href='article-frontend.php?id=$var'>".$row['title']."</a> </li>";
                         }
                     }catch(PDOException $e){
                         echo 'Query failed:'.$e->getMessage();

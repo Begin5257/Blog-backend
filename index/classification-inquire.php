@@ -7,8 +7,8 @@ try{
     $conn ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 }catch(PDOException $e){
     echo 'Connection failed:'.$e->getMessage();
-}$sql = "SELECT * FROM  `categorytest` LIMIT 0,6";
-echo '<ul class="classification">';
+}$sql = "SELECT * FROM  `categorytest`";
+echo '<ul class="frontend">';
 try{
     $rows = $conn->query($sql);
     foreach($rows as $row){

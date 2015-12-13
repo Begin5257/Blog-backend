@@ -8,15 +8,14 @@ try{
 }catch(PDOException $e){
     echo 'Connection failed:'.$e->getMessage();
 }
+$title = $_POST['newCategory'];
 
-$title = $_POST['title'];
-$content = $_POST['content'];
-$sql = "UPDATE `articlecontent` SET tile ='{$title}'
- ,content = '{$content}'WHERE  id='{$_POST['id']}'";
-$conn->query($sql);
+$query = "INSERT INTO `categorytest` (title)VALUES ('{$title}')";
+
+$conn->query($query);
 echo '<script>
     function pageJump(){
-        window.location.assign("article-succeed.html");
+        window.location.assign("../Category.php");
          }
     pageJump();
     </script>';
