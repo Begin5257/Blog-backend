@@ -400,7 +400,6 @@ smaller than 650 ɾ��tools
     #block {
         width: 100%;
         overflow-x: hidden;
-        overflow-y: hidden;
         word-break: break-word;
     }
     #article {
