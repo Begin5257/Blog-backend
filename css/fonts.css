@@ -234,8 +234,6 @@ body {
     right: 22%;
 }
 #inquireSearch{
-    float: right;
-    margin-right: 10%;
     background-color: transparent;
     border: none;
     z-index: 2000;
@@ -345,6 +343,10 @@ body {
 #pageList a:hover{
     color: #66BAB7;
 }
+.wenben{
+    float: left;
+    margin-bottom: 30px;
+}
 /************************************************************************************
 smaller than 1400 ����
 *************************************************************************************/
@@ -364,7 +366,10 @@ smaller than 1400 ����
         margin-left: 28%;
     }
     .day{
-        width: 82%;
+         display: none;
+    }
+    #article_inquire{
+        width: 85%;
     }
 }
 /************************************************************************************

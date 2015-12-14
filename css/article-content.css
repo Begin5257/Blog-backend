@@ -267,6 +267,10 @@ a:hover{
 #comment-body:active{
     border: 1px solid lightskyblue;
 }
+.wenben{
+    float: left;
+    margin-bottom: 30px;
+}
 #btn{
     margin-left: 5%;
     background-color: white;
@@ -296,8 +300,6 @@ a:hover{
     font-size: 1em;
 }
 #inquireSearch{
-    float: right;
-    margin-right: 10%;
     background-color: transparent;
     border: none;
     z-index: 2000;
@@ -409,23 +411,22 @@ smaller than 1400 ����
     .article-body {
         width: 100%;
     }
-
     /* sidebar */
     #tools {
         width: 25%;
     }
-
     .content {
         width: 80%;
     }
-
     .header {
         width: 15%;
         margin-left: 0;
     }
-
-    .day {
-        width: 82%;
+    .day{
+        display: none;
+    }
+    #article_inquire{
+        width:85%;
     }
 }
 /************************************************************************************

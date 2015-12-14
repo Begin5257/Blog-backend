@@ -42,17 +42,25 @@
     <div id="container">
         <ul  id="article_classification">
             <?php
-            include 'config.php';
-
-            $sql = "SELECT * FROM `articlecontent`WHERE  `content` LIKE '%{$_GET['content']}%'";
-            try{
-                $rows = $conn->query($sql);
-                foreach($rows as $row){
-                    $var=$row['id'];
-                    echo "<li><a href='../article-content.php?id=$var'>" .$row['tile']."</a> </li>";
+            include '../config.php';
+            $content = $_GET['content'];
+            if($content==""){
+                echo '<script>
+                function pageJump(){
+                    window.location.assign("../index.php");
                 }
-            }catch(PDOException $e){
-                echo 'Query failed:'.$e->getMessage();
+                </script>';
+            }else{
+                $sql = "SELECT * FROM `articlecontent`WHERE  `content` LIKE '%{$_GET['content']}%'";
+                try{
+                    $rows = $conn->query($sql);
+                    foreach($rows as $row){
+                        $var=$row['id'];
+                        echo "<li><a href='../article-content.php?id=$var'>" .$row['tile']."</a> </li>";
+                    }
+                }catch(PDOException $e){
+                    echo 'Query failed:'.$e->getMessage();
+                }
             }
             ?>
         </ul>
@@ -70,11 +78,6 @@
             </p>
     </div>
 </div>
-    <script>
-        function pageJump(){
-            window.location.assign("../article-submit.php");
-        }
-    </script>
     <script src="../js/three.min.js"></script>
     <script src="../js/projector.js"></script>
     <script src="../js/canvas-renderer.js"></script>
