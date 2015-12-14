@@ -6,8 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f589f2f-5a97-4858-8471-8f8dea1a39f4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/article-content.css" afterPath="$PROJECT_DIR$/css/article-content.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/fonts.css" afterPath="$PROJECT_DIR$/css/fonts.css" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,21 +77,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.428571">
-                  <caret line="5" column="0" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="17" />
+                <state vertical-scroll-proportion="0.56235826">
+                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fonts.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="fonts.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/fonts.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5633803">
-                  <caret line="371" column="17" selection-start-line="371" selection-start-column="17" selection-end-line="371" selection-end-column="17" />
+                <state vertical-scroll-proportion="-6.4307694">
+                  <caret line="369" column="5" selection-start-line="369" selection-start-column="5" selection-end-line="369" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -183,8 +183,8 @@
         <option value="$PROJECT_DIR$/article-content.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/index/index-inquire.php" />
-        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/css/fonts.css" />
+        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/css/article-content.css" />
       </list>
     </option>
@@ -998,14 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.428571">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.3714285">
@@ -1016,8 +1008,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/fonts.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3692307">
-          <caret line="217" column="7" selection-start-line="217" selection-start-column="5" selection-end-line="217" selection-end-column="7" />
+        <state vertical-scroll-proportion="-6.4307694">
+          <caret line="369" column="5" selection-start-line="369" selection-start-column="5" selection-end-line="369" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1026,6 +1018,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.66079813">
           <caret line="428" column="16" selection-start-line="428" selection-start-column="16" selection-end-line="428" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56235826">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
