@@ -126,4 +126,8 @@
 <script src="js/nav.js"></script>
 <script src="js/scrollfix.js"></script>
 </body>
+<!--<html>
+<head></head>
+<body></body>
+</html>-->
 </html>
