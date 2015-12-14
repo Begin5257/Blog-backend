@@ -401,10 +401,14 @@ smaller than 650 ɾ��tools
     #block {
         width: 100%;
         overflow-x: hidden;
+        overflow-y: hidden;
         word-break: break-word;
     }
     #article {
         width:100%;
+    }
+    .article{
+        height: auto;
     }
     #tools {
         display: none;
@@ -420,5 +424,8 @@ smaller than 650 ɾ��tools
     }
     #pageList a{
         margin: 20px;
+    }
+    #footer{
+        margin-bottom: 30px;
     }
 }

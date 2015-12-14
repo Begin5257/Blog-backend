@@ -54,19 +54,19 @@
     <div id="block">
        <?php include'index/container-inquire.php'?>
         <hr class="hr">
-        <div id="footer">
-            <h3>
-                ©Beginning
-            </h3>
-            <p>love with coffin
+        </div>
+    <div id="footer">
+        <h3>
+            ©Beginning
+        </h3>
+        <p>love with coffin
                     <span id="elapseClock">
                     </span>
                     <span>
                         <img src="icon/iconfont-xin.png" height="16px">
                     </span>
-            </p>
-        </div>
-        </div>
+        </p>
+    </div>
     </div>
     <div id="tools">
         <div class="day">
