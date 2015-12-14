@@ -131,6 +131,7 @@ body {
 }
 #list ul{
     text-align: center;
+    padding-left: 0!important;
 }
 #list li{
     margin: 20px auto;
@@ -338,12 +339,6 @@ smaller than 1400 ����
     .first{
         margin-left: 30%;
     }
-    #list td,th{
-        padding:5px 45px;
-    }
-    #list{
-        margin-left: 15%;
-    }
 }
 /************************************************************************************
 smaller than 980 ����
@@ -361,9 +356,6 @@ smaller than 980 ����
     }
     #list td,th{
         padding:5px 30px;
-    }
-    #list{
-        margin-left: 5%;
     }
 }
 
