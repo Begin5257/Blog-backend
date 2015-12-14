@@ -211,7 +211,7 @@ body {
     line-height: 32px;
 }
 #article_inquire input {
-    width: 80%;
+    width: 75%;
     height: 30px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -366,9 +366,6 @@ smaller than 1400 ����
     }
     .day{
          display: none;
-    }
-    #article_inquire{
-        width: 75%;
     }
 }
 /************************************************************************************
