@@ -45,116 +45,22 @@
             <button id="btn">评论</button>
         </div>
         <div class="comment-list">
-            <div class="comment-content">
-                <div class="header"><img src="head-portrait/7646acd250c2118efa410081c3f771f4_b.jpg" height="50px"> </div>
-                <div class="content">
-                    <div class="name">
-                        <p>Beginning</p>
-                    </div>
-                    <div class="details">
-                        <p>Just a test.</p>
-                    </div>
-                    <div class="comment-date">
-                        2015-11-25
-                    </div>
-                    <div class="comment-icon">
-                        <ul>
-                            <li><img src="icon/iconfont-dianzan.png" height="15px"></li>
-                            <li>喜欢</li>
-                            <li><img class="icons" src="icon/iconfont-huifu.png" height="15px"></li>
-                            <li>回复</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-content">
-                <div class="header"><img src="head-portrait/2702b00ec4844f981b3c33a7ac7fa6d5_r.jpg" height="50px"> </div>
-                <div class="content">
-                    <div class="name">
-                        <p>Beginning</p>
-                    </div>
-                    <div class="details">
-                        <p>Just a test.</p>
-                    </div>
-                    <div class="comment-date">
-                        2015-11-25
-                    </div>
-                    <div class="comment-icon">
-                        <ul>
-                            <li><img src="icon/iconfont-dianzan.png" height="15px"></li>
-                            <li>喜欢</li>
-                            <li><img class="icons" src="icon/iconfont-huifu.png" height="15px"></li>
-                            <li>回复</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-content">
-                <div class="header"><img src="head-portrait/8033b11c712b4aebbf25ecf936a19657_b.jpg" height="50px"> </div>
-                <div class="content">
-                    <div class="name">
-                        <p>Beginning</p>
-                    </div>
-                    <div class="details">
-                        <p>Just a test.</p>
-                    </div>
-                    <div class="comment-date">
-                        2015-11-25
-                    </div>
-                    <div class="comment-icon">
-                        <ul>
-                            <li><img src="icon/iconfont-dianzan.png" height="15px"></li>
-                            <li>喜欢</li>
-                            <li><img class="icons" src="icon/iconfont-huifu.png" height="15px"></li>
-                            <li>回复</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-content">
-                <div class="header"><img src="head-portrait/82457ba40559e5f5fc0f2874e451d97f_b.png" height="50px"> </div>
-                <div class="content">
-                    <div class="name">
-                        <p>Beginning</p>
-                    </div>
-                    <div class="details">
-                        <p>Just a test.</p>
-                    </div>
-                    <div class="comment-date">
-                        2015-11-25
-                    </div>
-                    <div class="comment-icon">
-                        <ul>
-                            <li><img src="icon/iconfont-dianzan.png" height="15px"></li>
-                            <li>喜欢</li>
-                            <li><img class="icons" src="icon/iconfont-huifu.png" height="15px"></li>
-                            <li>回复</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-content">
-                <div class="header"><img src="head-portrait/7f8cc6cda3be23d0bb6f1577f93187c5_b.jpg" height="40px"> </div>
-                <div class="content">
-                    <div class="name">
-                        <p>Beginning</p>
-                    </div>
-                    <div class="details">
-                        <p>Just a test.</p>
-                    </div>
-                    <div class="comment-date">
-                        2015-11-25
-                    </div>
-                    <div class="comment-icon">
-                        <ul>
-                            <li><img src="icon/iconfont-dianzan.png" height="15px"></li>
-                            <li>喜欢</li>
-                            <li><img class="icons" src="icon/iconfont-huifu.png" height="15px"></li>
-                            <li>回复</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <!-- 多说评论框 start -->
+            <div class="ds-thread" data-thread-key="<?=$id ?>" data-title="<?echo $title?>" data-url='http://begin5257.sinaapp.com/article-content.php?id="<?=$id?>"'></div>
+            <!-- 多说评论框 end -->
+            <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+            <script type="text/javascript">
+                var duoshuoQuery = {short_name:"begin5257"};
+                (function() {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0]
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+            </script>
+            <!-- 多说公共JS代码 end -->
         </div>
         <div id="footer">
             <h3>
