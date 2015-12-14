@@ -39,11 +39,6 @@
 <div id="container">
     <div class="article">
         <?php include'frontend/aricleContent.php';?>
-        <div id="comment">
-            <h3>发表评论</h3>
-            <input type="textarea" id="comment-body">
-            <button id="btn">评论</button>
-        </div>
         <div class="comment-list">
             <!-- 多说评论框 start -->
             <div class="ds-thread" data-thread-key="<?=$id ?>" data-title="<?echo $title?>" data-url='http://begin5257.sinaapp.com/article-content.php?id="<?=$id?>"'></div>
