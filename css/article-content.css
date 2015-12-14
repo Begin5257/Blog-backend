@@ -145,7 +145,6 @@ body {
 .article{
     width: 70%;
     height: inherit;
-    margin-left: 5%;
     padding-top: 30px;
     margin-bottom: 30px;
     float: left;
@@ -437,25 +436,34 @@ smaller than 980 ����
     .article {
         width: 100%;
     }
-    .article-body{
+
+    .article-body {
         width: 100%;
     }
+
     #tools {
         display: none;
     }
-    .nav-li{
+
+    .nav-li {
         display: none;
     }
-    #sidebar{
+
+    #sidebar {
         display: inline;
     }
-}
-    .content{
-    width: 80%;
-    margin-left: 0;
-}
-    .header{
-    width: 15%;
+
+    .content {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .header {
+        width: 15%;
+    }
+    .comment-list{
+        margin: 20px auto;
+    }
 }
 
 /************************************************************************************
