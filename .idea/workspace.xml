@@ -6,15 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f589f2f-5a97-4858-8471-8f8dea1a39f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-tianjia.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/surprise/add.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/surprise/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/surprise/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/surprise/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/surprise/insert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/surprise/left.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/surprise/right.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/surprise/left.php" afterPath="$PROJECT_DIR$/surprise/left.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/surprise/right.php" afterPath="$PROJECT_DIR$/surprise/right.php" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,14 +31,14 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.759324">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.48771122">
+        <splitter split-orientation="horizontal" split-proportion="0.19479495">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/config.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.5975057">
-                      <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                    <state vertical-scroll-proportion="0.055855855">
+                      <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
                       <folding />
                     </state>
                   </provider>
@@ -94,26 +88,26 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="left.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="left.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/surprise/left.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.28117913">
-                      <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+                    <state vertical-scroll-proportion="-7.9714284">
+                      <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
                       <folding>
-                        <marker date="1451309472358" expanded="true" signature="40:64" placeholder="INSERT INTO articlecontent..." />
-                        <marker date="1451309472358" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
+                        <marker date="1451310178683" expanded="true" signature="40:64" placeholder="INSERT INTO articlecontent..." />
+                        <marker date="1451310178683" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="right.php" pinned="false" current-in-tab="false">
+              <file leaf-file-name="right.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/surprise/right.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-7.0857143">
-                      <caret line="8" column="47" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="47" />
+                    <state vertical-scroll-proportion="0.5585586">
+                      <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
                       <folding>
-                        <marker date="1451309472332" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
+                        <marker date="1451310200260" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
                       </folding>
                     </state>
                   </provider>
@@ -128,7 +122,7 @@
           <file leaf-file-name="insert.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/surprise/insert.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.38662133">
+                <state vertical-scroll-proportion="0.6144144">
                   <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding>
                     <marker date="1451307720908" expanded="true" signature="72:124" placeholder="INSERT INTO surprise..." />
@@ -211,10 +205,10 @@
         <option value="$PROJECT_DIR$/surprise/add.php" />
         <option value="$PROJECT_DIR$/surprise/insert.php" />
         <option value="$PROJECT_DIR$/backend/showList.php" />
-        <option value="$PROJECT_DIR$/surprise/right.php" />
-        <option value="$PROJECT_DIR$/surprise/left.php" />
         <option value="$PROJECT_DIR$/surprise/index.php" />
         <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/surprise/left.php" />
+        <option value="$PROJECT_DIR$/surprise/right.php" />
       </list>
     </option>
   </component>
@@ -573,18 +567,28 @@
     <option name="localTasksCounter" value="32" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-318" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108742006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22093023" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -593,7 +597,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22093023" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -976,7 +979,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/surprise/insert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38662133">
+        <state vertical-scroll-proportion="0.6144144">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <marker date="1451307720908" expanded="true" signature="72:124" placeholder="INSERT INTO surprise..." />
@@ -989,24 +992,6 @@
     <entry file="file://$PROJECT_DIR$/icon/iconfont-tianjia.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/surprise/right.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0857143">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="47" />
-          <folding>
-            <marker date="1451309472332" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/surprise/left.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1030,9 +1015,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5975057">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.055855855">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/surprise/left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.9714284">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+          <folding>
+            <marker date="1451310178683" expanded="true" signature="40:64" placeholder="INSERT INTO articlecontent..." />
+            <marker date="1451310178683" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/surprise/right.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5585586">
+          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+          <folding>
+            <marker date="1451310200260" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
+          </folding>
         </state>
       </provider>
     </entry>
