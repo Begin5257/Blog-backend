@@ -9,7 +9,7 @@ try{
         echo '<div class="placeholder"></div>';
         $var=$row['id'];
         echo "<div class='demo'><p class='rightContent'>".$row['content']."</p></div>
-        <div class='date'>".$row['DateType']."</div>";
+        <div class='date'>".$row['DataType']."</div>";
     }
 }catch(PDOException $e){
     echo 'Query failed:'.$e->getMessage();
