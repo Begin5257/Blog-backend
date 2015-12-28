@@ -8,7 +8,8 @@ try{
     foreach($rows as $row){
         echo '<div class="placeholder"></div>';
         $var=$row['id'];
-        echo "<div class='demo'><p class='rightContent'>".$row['content']."</p></div>";
+        echo "<div class='demo'><p class='rightContent'>".$row['content']."</p></div>
+        <div class='date'>".$row['DateType']."</div>";
     }
 }catch(PDOException $e){
     echo 'Query failed:'.$e->getMessage();
