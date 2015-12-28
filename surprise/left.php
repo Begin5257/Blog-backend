@@ -7,7 +7,7 @@ try{
     $rows = $conn->query($sql);
     foreach($rows as $row){
         $var=$row['id'];
-        echo "<div class='demo'><p class='rightContent'>".$row['content']."</p></div>
+        echo "<div class='demo'><p class='leftContent'>".$row['content']."</p></div>
         <div class='date'>".$row['DataType']."</div>";
         echo '<div class="placeholder"></div>';
     }

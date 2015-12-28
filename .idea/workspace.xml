@@ -6,8 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f589f2f-5a97-4858-8471-8f8dea1a39f4" name="Default" comment="surprise">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/surprise/index.css" afterPath="$PROJECT_DIR$/surprise/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/surprise/left.php" afterPath="$PROJECT_DIR$/surprise/left.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/surprise/right.php" afterPath="$PROJECT_DIR$/surprise/right.php" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,14 +30,14 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.759324">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.31230283">
+        <splitter split-orientation="horizontal" split-proportion="0.7294953">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/config.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.1443539">
-                      <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                    <state vertical-scroll-proportion="0.61350405">
+                      <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -46,8 +46,8 @@
               <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/index.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-19.885714">
-                      <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
+                    <state vertical-scroll-proportion="-4.8285713">
+                      <caret line="104" column="43" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
                       <folding />
                     </state>
                   </provider>
@@ -86,27 +86,27 @@
             </leaf>
           </split-first>
           <split-second>
-            <splitter split-orientation="horizontal" split-proportion="0.7224771">
+            <splitter split-orientation="horizontal" split-proportion="0.8544304">
               <split-first>
                 <leaf>
-                  <file leaf-file-name="left.php" pinned="false" current-in-tab="true">
+                  <file leaf-file-name="left.php" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/surprise/left.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state vertical-scroll-proportion="0.36088476">
-                          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+                        <state vertical-scroll-proportion="-14.171429">
+                          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
                           <folding>
-                            <marker date="1451312771939" expanded="true" signature="40:64" placeholder="INSERT INTO articlecontent..." />
-                            <marker date="1451312771939" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
+                            <marker date="1451313070916" expanded="true" signature="40:64" placeholder="INSERT INTO articlecontent..." />
+                            <marker date="1451313070916" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
                           </folding>
                         </state>
                       </provider>
                     </entry>
                   </file>
-                  <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+                  <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/surprise/index.css">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state vertical-scroll-proportion="-12.4">
-                          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+                        <state vertical-scroll-proportion="0.50523865">
+                          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
                           <folding />
                         </state>
                       </provider>
@@ -131,8 +131,8 @@
                   <file leaf-file-name="right.php" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/surprise/right.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state vertical-scroll-proportion="0.2887078">
-                          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="38" />
+                        <state vertical-scroll-proportion="0.25261933">
+                          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="12" selection-end-column="5" />
                           <folding>
                             <marker date="1451312771925" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
                           </folding>
@@ -234,10 +234,10 @@
         <option value="$PROJECT_DIR$/surprise/insert.php" />
         <option value="$PROJECT_DIR$/backend/showList.php" />
         <option value="$PROJECT_DIR$/surprise/index.php" />
-        <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/surprise/index.css" />
         <option value="$PROJECT_DIR$/surprise/right.php" />
         <option value="$PROJECT_DIR$/surprise/left.php" />
+        <option value="$PROJECT_DIR$/surprise/index.css" />
+        <option value="$PROJECT_DIR$/config.php" />
       </list>
     </option>
   </component>
@@ -1015,14 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.885714">
-          <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1043,18 +1035,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1443539">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/surprise/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.4">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state vertical-scroll-proportion="-4.8285713">
+          <caret line="104" column="43" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1071,12 +1055,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/surprise/left.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36088476">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding>
-            <marker date="1451312771939" expanded="true" signature="40:64" placeholder="INSERT INTO articlecontent..." />
-            <marker date="1451312771939" expanded="true" signature="40:77" placeholder="SELECT * FRO..surprise..." />
-          </folding>
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/surprise/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50523865">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61350405">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
