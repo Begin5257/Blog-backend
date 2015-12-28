@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+#container{
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+    color: #555555;
+}
+#nav{
+    background-color: #E0E0E0;
+    height: 50px;
+}
+form{
+    text-align: center;
+}
+input{
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 180px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+input:hover{
+    border: 1px solid #66BAB7;
+}
+button{
+    background-color: white;
+    display: block;
+    width: 50%;
+    height: 38px;
+    margin: 15px auto;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}

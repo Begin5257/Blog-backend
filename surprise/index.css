@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #555555;
+}
+#nav{
+    background-color: #E0E0E0;
+    height: 50px;
+}
+.imgRight{
+    border: none;
+    background-color: transparent;
+    float: right;
+    margin-right: 2%;
+    margin-top: 5px;
+}
+#container{
+    background-color: bisque;
+    height: 1500px;
+}
+.placeholder{
+    height: 80px;
+    width: 48%;
+}
+#left{
+    border-right: 1px solid rgba(218,201,166,0.5);
+    width: 48%;
+    float: left;
+    text-align: right;
+}
+.leftContent{
+    padding-right: 5%;
+}
+#right{
+    width: 48%;
+    float: right;
+}
