@@ -2,25 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Title</title>
+    <style>
+        body {
+            padding:0;
+            margin:0;
+            overflow:hidden;
+            height: 600px;
+        }
+        canvas {
+            padding:0;
+            margin:0;
+        }
+        div.btnbg {
+            position:fixed;
+            left:0;
+            top:0;
+        }
+    </style>
 </head>
 <body>
-<div id="nav">
-    <button class="imgRight"><a href="add.php"><img src="../icon/iconfont-add.svg" height="30px"></a></button>
+<canvas id="sakura"></canvas>
+<div class="btnbg">
+    <div id="left">
+        <?php include 'left.php'?>
+    </div>
+    <div id="right">
+        <?php include 'right.php'?>
+    </div>
 </div>
-<div id="container">
-    <canvas id="sakura"></canvas>
-        <div class="btnbg">
-        <div id="left">
-            <?php include 'left.php'?>
-        </div>
-        <div id="right">
-            <?php include 'right.php'?>
-        </div>
-</div>
-</div>
+
+<!-- sakura shader -->
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
 uniform mat4 uProjection;
 uniform mat4 uModelview;
