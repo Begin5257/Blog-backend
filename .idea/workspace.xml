@@ -7,14 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f589f2f-5a97-4858-8471-8f8dea1a39f4" name="Default" comment="surprise">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon/iconfont-add.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/color2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/sukura.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/surprise/sukura.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/surprise/index.css" afterPath="$PROJECT_DIR$/surprise/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/surprise/index.php" afterPath="$PROJECT_DIR$/surprise/index.php" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +31,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.6778443">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.18044238">
+                  <caret line="5" column="0" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/surprise/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.36088476">
-                  <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+                <state vertical-scroll-proportion="-7.9714284">
+                  <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -170,7 +173,6 @@
         <option value="$PROJECT_DIR$/backend/showList.php" />
         <option value="$PROJECT_DIR$/surprise/right.php" />
         <option value="$PROJECT_DIR$/surprise/left.php" />
-        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/color.js" />
         <option value="$PROJECT_DIR$/js/color2.js" />
@@ -178,6 +180,7 @@
         <option value="$PROJECT_DIR$/surprise/sukura.html" />
         <option value="$PROJECT_DIR$/surprise/index.php" />
         <option value="$PROJECT_DIR$/surprise/index.css" />
+        <option value="$PROJECT_DIR$/config.php" />
       </list>
     </option>
   </component>
@@ -920,14 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4691502">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/fonts.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.6285715">
@@ -970,18 +965,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/surprise/index.php">
+    <entry file="file://$PROJECT_DIR$/surprise/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36088476">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/surprise/index.css">
+    <entry file="file://$PROJECT_DIR$/surprise/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61350405">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state vertical-scroll-proportion="-7.9714284">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18044238">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
