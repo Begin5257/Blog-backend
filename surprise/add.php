@@ -14,7 +14,7 @@
     <form action="insert.php" method="post">
         <input type="text" placeholder="说点什么吧..." name="content" required>
         <br>
-        <button class="inpout">提交~</button>
+        <button class="input">提交~</button>
     </form>
 </div>
 </body>
