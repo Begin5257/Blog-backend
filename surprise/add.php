@@ -8,12 +8,13 @@
 </head>
 <body>
 <div id="nav">
+    <button class="imgRight"><a href="index.php"><img src="../icon/iconfont-fanhui.svg" height="30px"></a></button>
 </div>
 <div id="container">
     <form action="insert.php" method="post">
         <input type="text" placeholder="说点什么吧..." name="content" required>
         <br>
-        <button>提交~</button>
+        <button class="inpout">提交~</button>
     </form>
 </div>
 </body>

@@ -12,6 +12,13 @@ body{
     background-color: #E0E0E0;
     height: 50px;
 }
+.imgRight{
+    border: none;
+    background-color: transparent;
+    float: left;
+    margin-left: 3%;
+    margin-top: 8px;
+}
 form{
     text-align: center;
 }
@@ -29,7 +36,7 @@ input{
 input:hover{
     border: 1px solid #66BAB7;
 }
-button{
+.input{
     background-color: white;
     display: block;
     width: 50%;
