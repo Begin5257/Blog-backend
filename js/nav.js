@@ -1,7 +1,7 @@
 /**
  * Created by 83916 on 2015/11/21.
  */
-//µ±ÆÁÄ»¿í¶ÈÐ¡ÓÚ1024ÏñËØÒþ²Ø²à±ßidÎªtoolsµÄdiv
+//ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½1024ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø²ï¿½ï¿½idÎªtoolsï¿½ï¿½div
 var Width = window.innerWidth;
 function onScreenChange() {
     $(document).ready(function () {
@@ -12,29 +12,29 @@ function onScreenChange() {
 }
 function mediaInquire() {
         if(Width < 1400){
-        //°ÑÔ­À´µÄToolsÉ¾µô!
+        //ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ToolsÉ¾ï¿½ï¿½!
         var parentsTools = document.getElementById("container");
         var childTools = document.getElementById("tools");
         parentsTools.removeChild(childTools);
-        //°ÑÎÄÕÂ·ÅÔÚÒ³ÃæÖÐÑë>_<
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½>_<
         document.getElementById("block").style.width = "100%";
          }
     }
 
-//µã»÷sidebarÀ´ÇÐ»»sidebar-detailÒþ²Ø/ÏÔÊ¾
+//ï¿½ï¿½ï¿½sidebarï¿½ï¿½ï¿½Ð»ï¿½sidebar-detailï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½Ê¾
 function showSidebar() {
-    //µã»÷sidebarÍ¼±ê³öÏÖ²à±ßÀ¸.touchstart·ÀÖ¹Îó´¥
+    //ï¿½ï¿½ï¿½sidebarÍ¼ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½.touchstartï¿½ï¿½Ö¹ï¿½ï¿½
 //        $("#sidebar").on("click touchstart",function(e){
 //            $("#sidebar-detail").css("display","inline");
 //        });
-    //ÔÙµãÒ»ÏÂÒþ²Ø
+    //ï¿½Ùµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     $(document).ready(function () {
         $("#sidebar").click(function () {
             $("#sidebar-detail").toggle();
         });
     });
 }
-//ÏÂ»¬Ê±¹Ì¶¨
+//ï¿½Â»ï¿½Ê±ï¿½Ì¶ï¿½
 $(function(){
     var fix = $(".fix"), fixtop = $(".fix-top"), fixStartTop = $(".fix-startTop"), fixStartBottom = $(".fix-startBottom"), fixbottom = $(".fix-bottom"), fixfooter = $(".fix-footer");
     fix.scrollFix();
@@ -51,7 +51,7 @@ $(function(){
 
 
 showSidebar();
-//ÏÔÊ¾ÈÕÆÚ
+//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
 var start = new Date();
 start.setFullYear(2015);
 start.setMonth(0);
@@ -73,9 +73,9 @@ function memoryTime1(date){
     $("#elapseClock").html(result);
 }
 
-setInterval(function(){
-    memoryTime1(start)
-},500);
+//setInterval(function(){
+//    memoryTime1(start)
+//},500);
 
 
 
