@@ -4,7 +4,7 @@ include 'config.php';
 $loginID = $_POST['id'];
 $loginPassword = $_POST['password'];
 
-$sql = "SELECT * FROM  `users`WHERE  id='Beginning'";
+$sql = "SELECT * FROM  `users`WHERE  id='Sheila'";
 $rows = $conn->query($sql);
 foreach($rows as $row){
     if($loginPassword==$row['password']){
