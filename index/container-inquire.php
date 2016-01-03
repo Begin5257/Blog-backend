@@ -6,7 +6,7 @@ include 'config.php';
 
 $start =  ($page-1)*$pagesize;
 $end = $page*$pagesize;
-$sql = "SELECT * FROM  `articlecontent` LIMIT $start,$end";
+$sql = "SELECT * FROM  `articlecontent`  ORDER BY id DESC LIMIT $start,$end ";
 try{
     $rows = $conn->query($sql);
     $i=1;
