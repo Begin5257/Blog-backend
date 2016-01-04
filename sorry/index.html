@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beginning</title>
+</head>
+<body>
+    <div id="please"></div>
+    <script>
+        for(var i=1;i<=1024;i++){
+            var para=document.createElement("p");
+            var node=document.createTextNode("爱你"+" "+i+" "+"（づ￣3￣）づ╭❤～");
+            para.appendChild(node);
+
+            var element=document.getElementById("please");
+            element.appendChild(para);
+        }
+    </script>
+</body>
+</html>
