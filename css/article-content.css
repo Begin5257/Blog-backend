@@ -143,6 +143,8 @@ body {
     height: 500px;
 }
 .article{
+    overflow: hidden;
+    word-wrap: break-word;
     width: 70%;
     height: inherit;
     padding-top: 30px;

@@ -70,7 +70,7 @@ function memoryTime1(date){
     var minutes = Math.floor(seconds/60);
     seconds = seconds % 60;
     var result =" "+days+" days" +  hours+" hours"  + minutes+"  minutes" + seconds+" seconds"+" ";
-    $("elapseClock").html(result);
+    $("#elapseClock").html(result);
 }
 
 setInterval(function(){
