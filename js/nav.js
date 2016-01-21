@@ -1,7 +1,6 @@
 /**
  * Created by 83916 on 2015/11/21.
  */
-//����Ļ���С��1024�������ز��idΪtools��div
 var Width = window.innerWidth;
 function onScreenChange() {
     $(document).ready(function () {
@@ -12,29 +11,22 @@ function onScreenChange() {
 }
 function mediaInquire() {
         if(Width < 1400){
-        //��ԭ����Toolsɾ��!
         var parentsTools = document.getElementById("container");
         var childTools = document.getElementById("tools");
         parentsTools.removeChild(childTools);
-        //�����·���ҳ������>_<
         document.getElementById("block").style.width = "100%";
          }
     }
 
-//���sidebar���л�sidebar-detail����/��ʾ
+
 function showSidebar() {
-    //���sidebarͼ����ֲ����.touchstart��ֹ��
-//        $("#sidebar").on("click touchstart",function(e){
-//            $("#sidebar-detail").css("display","inline");
-//        });
-    //�ٵ�һ������
     $(document).ready(function () {
         $("#sidebar").click(function () {
             $("#sidebar-detail").toggle();
         });
     });
 }
-//�»�ʱ�̶�
+
 $(function(){
     var fix = $(".fix"), fixtop = $(".fix-top"), fixStartTop = $(".fix-startTop"), fixStartBottom = $(".fix-startBottom"), fixbottom = $(".fix-bottom"), fixfooter = $(".fix-footer");
     fix.scrollFix();
@@ -51,7 +43,7 @@ $(function(){
 
 
 showSidebar();
-//��ʾ����
+
 var start = new Date();
 start.setFullYear(2015);
 start.setMonth(0);

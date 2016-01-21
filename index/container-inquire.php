@@ -1,5 +1,5 @@
 <?php
-$pagesize = 3;
+$pagesize = 5;
 $page = isset($_GET['page'])?$_GET['page']:1;
 
 include 'config.php';
