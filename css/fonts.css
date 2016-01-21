@@ -247,7 +247,7 @@ body {
     margin-top: 25px;
     display: block;
     width: 80%;
-    height: 250px;
+    height: 300px;
     border: 1px solid #cccccc;
     border-radius: 4px;
 }
@@ -345,6 +345,10 @@ body {
 }
 .wenben{
     float: left;
+}
+.special{
+    font-size: 14px;
+
 }
 /************************************************************************************
 smaller than 1400 ����
