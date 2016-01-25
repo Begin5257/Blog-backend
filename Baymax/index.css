@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #AAAAAA;
+}
+#baymax{
+    width: 300px;
+    height: 100%;
+    position: relative;
+    margin: 100px auto;
+}
+#head{
+    background-color: #ffffff;
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    z-index: 2000;
+    left: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 10px #888888, 6px 6px 6px #ccc inset;
+    -webkit-box-shadow: 0px 6px 10px #888888, 6px 6px 6px #ccc inset;
+    -moz-box-shadow: 0px 6px 10px #888888, 6px 6px 6px #ccc inset;
+}
+#eyes-l{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    background-color: #000;
+    -webkit-animation: eyeclose 2s infinite;
+    -moz-animation: eyeclose 2s infinite;
+    animation: eyeclose 2s infinite;
+}
+#eyes-r{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    background-color: #000;
+    -webkit-animation: eyeclose 2s infinite;
+    -moz-animation: eyeclose 2s infinite;
+    animation: eyeclose 2s infinite;
+}
+#mouth{
+    width: 30px;
+    height: 3px;
+    border-radius: 50%;
+    left: 35px;
+    top: 42px;
+    position: absolute;
+    box-shadow: 0px 1px 0px #000;
+    -moz-box-shadow: 0px 1px 0px #000;
+    -webkit-box-shadow: 0px 1px 0px #000;
+}
+#hand-l,#hand-r{
+    width: 78px;
+    height: 224px;
+    position: absolute;
+    top: 75px;
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: 6px 6px 6px #CCC inset;
+    -webkit-box-shadow: 6px 6px 6px #CCC inset;
+    -moz-box-shadow: 6px 6px 6px #CCC inset;
+    -webkit-transform: rotate(16deg);
+    transform: rotate(16deg);
+    -moz-transform: rotate(16deg);
+}
+#hand-l{
+    left: 20px;
+}
+#hand-r{
+    right: 20px;
+    -webkit-transform: scale(-1, 1) rotate(16deg);
+}
+#body{
+    z-index: 1000;
+    width: 214px;
+    height: 320px;
+    background-color: #FFF;
+    border-radius: 45% 45% 50% 50%;
+    position: absolute;
+    left: 14.5%;
+    top: 55px;
+    box-shadow: 6px 0 6px #CCC inset, -6px 0 6px #CCC inset;
+    -webkit-box-shadow: 6px 0 6px #CCC inset, -6px 0 6px #CCC inset;
+    -moz-box-shadow: 6px 0 6px #CCC inset, -6px 0 6px #CCC inset
+}
+#heart{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 2px #CCC inset;
+    position: absolute;
+    top: 60px;
+    right: 55px;
+    z-index: 111;
+    border: 1px solid #ccc
+}
+#belly{
+    width: 224px;
+    height: 264px;
+    background-color: #FFF;
+    border-radius: 42% 42% 50% 50%;
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+    box-shadow: 0px 3px 2px #888888, 0px -6px 6px #CCC inset;
+    -webkit-box-shadow: 0px 3px 2px #888888, 0px -6px 6px #CCC inset;
+    -moz-box-shadow: 0px 3px 2px #888888, 0px -6px 6px #CCC inset
+}
+#feet-l{
+    width: 80px;
+    height: 145px;
+    position: absolute;
+    background-color: #FFF;
+    border-radius: 40% 30% 10px 45%;
+    top: 290px;
+    left: 70px;
+    box-shadow: -2px 0 2px #999 inset, 4px 0 4px #CCC inset, -4px 0 4px #CCC inset;
+    -moz-box-shadow: -2px 0 2px #999 inset, 4px 0 4px #CCC inset, -4px 0 4px #CCC inset;
+    box-shadow: -2px 0 2px #999 inset, 4px 0 4px #CCC inset, -4px 0 4px #CCC inset
+}
+#feet-r{
+    width: 80px;
+    height: 145px;
+    position: absolute;
+    background-color: #FFF;
+    border-radius: 40% 30% 10px 45%;
+    top: 290px;
+    right: 70px;
+    box-shadow: -2px 0 2px #999 inset, 4px 0 4px #CCC inset, -4px 0 4px #CCC inset;
+    -moz-box-shadow: -2px 0 2px #999 inset, 4px 0 4px #CCC inset, -4px 0 4px #CCC inset;
+    box-shadow: -2px 0 2px #999 inset, 4px 0 4px #CCC inset, -4px 0 4px #CCC inset;
+    -webkit-transform: scale(-1, 1);
+    -moz-webkit-transform: scale(-1, 1);
+    webkit-transform: scale(-1, 1)
+}
+#head {
+    -webkit-animation: myfirst 10s infinite;
+    -moz-animation: myfirst 10s infinite;
+    animation: myfirst 10s infinite;
+}
+@keyframes myfirst {
+    0% {
+        transform:rotate(0deg);
+    }
+    25% {
+        transform:rotate(8deg);
+    }
+    50% {
+        transform:rotate(0deg);
+    }
+    75% {
+        transform:rotate(-8deg);
+    }
+    100 {
+    transform:rotate(0deg);
+    }
+}
+@keyframes eyeclose {
+    0%{
+        height: 15px;
+        top: 35px;
+    }
+    20%{
+        height: 12px;
+        top: 38px;
+    }
+    40%{
+        height: 9px;
+        top: 41px;
+    }
+    60%{
+        height: 9px;
+        top: 41px;
+    }
+    80%{
+        height: 12px;
+        top: 38px;
+    }
+    100%{
+        height: 15px;
+        top: 35px;
+    }
+}
