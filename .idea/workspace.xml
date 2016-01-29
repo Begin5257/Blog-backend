@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/css/article-content.css" line="187" />
+    <bookmark url="file://$PROJECT_DIR$/css/article-content.css" line="193" />
     <bookmark url="file://$PROJECT_DIR$/article-content.php" line="124" />
     <bookmark url="file://$PROJECT_DIR$/js/canvas-renderer.js" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f589f2f-5a97-4858-8471-8f8dea1a39f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/fonts.css" afterPath="$PROJECT_DIR$/css/fonts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/article-content.css" afterPath="$PROJECT_DIR$/css/article-content.css" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,24 +28,24 @@
     <favorites_list name="blog" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5182547">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.171429">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="102" column="31" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="article-content.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="article-content.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/article-content.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-26.457144">
-                  <caret line="441" column="19" selection-start-line="441" selection-start-column="19" selection-end-line="441" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.6234004">
+                  <caret line="191" column="1" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -61,11 +61,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fonts.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="fonts.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/fonts.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5125725">
-                  <caret line="249" column="14" selection-start-line="249" selection-start-column="14" selection-end-line="249" selection-end-column="14" />
+                <state vertical-scroll-proportion="-9.742857">
+                  <caret line="194" column="21" selection-start-line="194" selection-start-column="5" selection-end-line="194" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -74,7 +74,7 @@
           <file leaf-file-name="list-inquire.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index/list-inquire.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.8857143">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="15" />
                   <folding />
                 </state>
@@ -94,12 +94,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="nav.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/nav.js">
+        <leaf>
+          <file leaf-file-name="fonts.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/css/fonts.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.31958762">
-                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.6234004">
+                  <caret line="203" column="1" selection-start-line="198" selection-start-column="0" selection-end-line="203" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -179,8 +179,8 @@
         <option value="$PROJECT_DIR$/sorry/index.html" />
         <option value="$PROJECT_DIR$/js/nav.js" />
         <option value="$PROJECT_DIR$/index/container-inquire.php" />
-        <option value="$PROJECT_DIR$/css/article-content.css" />
         <option value="$PROJECT_DIR$/css/fonts.css" />
+        <option value="$PROJECT_DIR$/css/article-content.css" />
       </list>
     </option>
   </component>
@@ -224,8 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,6 +272,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -556,7 +556,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1505295" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -948,11 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5669383">
           <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding>
-            <marker date="1453361581254" expanded="true" signature="154:186" placeholder="SELECT * FRO..articlecontent..." />
-            <marker date="1453361581254" expanded="true" signature="154:187" placeholder="SELECT * FRO..articlecontent..." />
-            <marker date="1453361581254" expanded="true" signature="154:217" placeholder="SELECT * FRO..articlecontent..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -964,17 +959,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/article-content.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.457144">
-          <caret line="441" column="19" selection-start-line="441" selection-start-column="19" selection-end-line="441" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index/list-inquire.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8857143">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="15" />
           <folding />
         </state>
@@ -982,7 +969,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.171429">
+        <state vertical-scroll-proportion="0.0">
           <caret line="102" column="31" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
           <folding />
         </state>
@@ -990,8 +977,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/fonts.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5125725">
-          <caret line="249" column="14" selection-start-line="249" selection-start-column="14" selection-end-line="249" selection-end-column="14" />
+        <state vertical-scroll-proportion="-9.742857">
+          <caret line="194" column="21" selection-start-line="194" selection-start-column="5" selection-end-line="194" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/article-content.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6234004">
+          <caret line="191" column="1" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
           <folding />
         </state>
       </provider>

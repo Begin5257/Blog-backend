@@ -184,6 +184,12 @@ body {
     line-height: 1.8;
     color: #555;
 }
+.article p{
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
 #tools{
     width: 20%;
     margin-top: 50px;
@@ -221,13 +227,13 @@ body {
     margin-top: 25px;
     display: block;
     width: 80%;
-    height: 250px;
+    height: 270px;
     border: 1px solid #cccccc;
     border-radius: 4px;
 }
 .classification {
-    margin-top: 20px;
-    margin-left: 30px!important;
+    margin-top: 15px;
+    margin-left: 26px!important;
     list-style-type: none;
 }
 .classification li{
