@@ -4,10 +4,10 @@ include 'config.php';
 $loginID = $_POST['id'];
 $loginPassword = $_POST['password'];
 
-$sql = "SELECT * FROM  `users`WHERE  id='Sheila'";
+$sql = "SELECT * FROM  `users`";
 $rows = $conn->query($sql);
 foreach($rows as $row){
-    if($loginPassword==$row['password']){
+    if($loginPassword==$row['password']&&$loginID==$row['id']){
         echo '<script>
              function pageJump(){
         window.location.assign("backPage.html");
