@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#scroll-img{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    z-index: 100;
+}
+.scroll-image img{
+    width: 100%;
+    height: 150px;
+}
+.a{
+    display: inline;
+}
+.b{
+    display: none;
+}
+.c{
+    display: none;
+}
+.d{
+    display: none;
+}
+.e{
+    display: none;
+}
+#slide-list {
+    position: relative;
+    top: -25px;
+    text-align: center;
+}
+.spot{
+    display: inline-block;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+
+}
+.active{
+    background-color: #ffffff;
+}
