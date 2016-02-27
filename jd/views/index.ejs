@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/jquery-1.12.1.js"></script>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+  </head>
+  <body ng-app="list">
+    <div id="header">
+      <div id="logo"></div>
+      <form id="input">
+        <input type="text" class="search">
+        <button class="search-btn">登录</button>
+      </form>
+    </div>
+    <div id="scroll-img">
+      <div class="scroll-image a">
+        <img src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t2101/81/1548656372/58283/6b93d2ff/56c67dfaNee0b511b.jpg">
+      </div>
+      <div class="scroll-image b">
+        <img src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t2122/310/2275823578/78642/91522970/56c42bd0N27d4f5c6.jpg">
+      </div>
+      <div class="scroll-image c">
+        <img src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t2014/264/1477559142/43616/e8b775b1/56c406a5Nf77a9fa6.jpg">
+      </div>
+      <div class="scroll-image d">
+        <img src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t1957/54/1500485530/40262/f2f5badc/56c2d554Nc6844e1d.jpg">
+      </div>
+      <div class="scroll-image e">
+        <img src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t2014/264/1477559142/43616/e8b775b1/56c406a5Nf77a9fa6.jpg">
+      </div>
+      <div id="slide-list">
+        <span class="spot active"></span>
+        <span class="spot"></span>
+        <span class="spot"></span>
+        <span class="spot"></span>
+        <span class="spot"></span>
+      </div>
+    </div>
+    <div id="jd-container" ng-controller="listShow">
+      <div id="quick-nav">
+        <div class="quick"><img src="http://m.360buyimg.com/mobilecms/s80x80_jfs/t2275/267/2109565733/4908/6f42753f/56be05dcN94355bd6.png">
+          <span class="introduction">分类查询</span>
+        </div>
+
+        <div class="quick"><img src="http://m.360buyimg.com/mobilecms/s80x80_jfs/t2494/111/1522569622/6459/1f1f809b/56be05fdNdb68df6a.png">
+          <span class="introduction">物流查询</span>
+        </div>
+
+        <div class="quick"><a href="shopping"><img src="http://m.360buyimg.com/mobilecms/s80x80_jfs/t2575/81/1126081392/5354/bb2caed8/56be0620N63774172.png"></a>
+          <span class="introduction">购物车</span>
+        </div>
+
+        <div class="quick"><a href="home"><img src="http://m.360buyimg.com/mobilecms/s80x80_jfs/t1903/34/1497088769/5451/d1b83d9/56be0635N1751d492.png"></a>
+          <span class="introduction">我的京东</span>
+        </div>
+
+        <div class="quick"><img src="http://m.360buyimg.com/mobilecms/s80x80_jfs/t2317/199/2133150142/5451/a1567996/56be0648N66de16d0.png">
+          <span class="introduction">充值中心</span>
+        </div>
+
+        <div class="quick"><img src="http://m.360buyimg.com/mobilecms/s80x80_jfs/t2380/73/2201958551/5165/4936c434/56be066cNd9a4462d.png">
+          <span class="introduction">领券中心</span>
+        </div>
+
+        <div class="quick"><img src="http://m.360buyimg.com/mobilecms/s80x80_jfs/t2356/128/2278675876/7830/d243d1fb/56be0684Nfe796382.png">
+          <span class="introduction">京东超市</span>
+        </div>
+
+        <div class="quick"><img src="http://m.360buyimg.com/mobilecms/s80x80_jfs/t2017/363/2247275282/5267/d7e8df50/56be06c0N6a216cbd.png">
+          <span class="introduction">我的关注</span>
+        </div>
+      </div>
+      <div id="activity">
+        <a href="#"><img src="http://m.360buyimg.com/mobilecms/jfs/t2116/138/2287828519/50563/a120b8c0/56c3ec68Nd78fcc20.jpg!q70.jpg"></a>
+      </div>
+      <div id="quick-buy">
+        <span class="quick-title">掌上秒杀</span>
+      </div>
+      <div id="container">
+        <ul id="item-list">
+          <li ng-repeat="x in items" class="list-content" ng-click="getId($index)">
+            <a href="shopping"><img ng-src={{x.image}} height="150px" width="160px"></a>
+            <br>
+            <div class="item-title">
+              <a href="shopping"> {{x.title}} </a>
+            </div>
+            <div class="item-price">¥{{x.price}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="/javascripts/index.js"></script>
+  </body>
+</html>
